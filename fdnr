@@ -68,7 +68,7 @@ if true; then
     fi
 
     cd FishDeskNextReborn
-    dotnet publish --arch x64 --os win
+    dotnet publish --arch x64 --os win --framework net8.0-windows
 
     if [ ! $? -eq 0 ]; then
         echo "Error: Cannot publish the project."
