@@ -2,19 +2,19 @@
 # SPDX-License-Identifier: GPL-3.0
 
 if true; then
+    echo -n "Checking OS type... "
+
     if [ ! -e /System ]; then
-        echo " * OS type: GNU/Linux"
+        echo "GNU/Linux"
         export OS_TYPE="GNU/Linux"
     else
-        echo " * OS type: Darwin (macOS)"
+        echo "Darwin (macOS)"
         export OS_TYPE="Darwin (macOS)"
     fi
 
-    export LC_ALL=en_US.UTF-8
-    export LANG=en_US.UTF-8
     export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-    echo -n " * Checking whether Git has been installed... "
+    echo -n "Checking whether Git has been installed... "
     if [ -f "$(which git)" ]; then
         echo "yes"
     else
@@ -24,7 +24,7 @@ if true; then
         exit 1
     fi
 
-    echo -n " * Checking whether .NET SDK 8.0 for $OS_TYPE has been installed... "
+    echo -n "Checking whether .NET SDK 8.0 for $OS_TYPE has been installed... "
     if [ ! -z "$(dotnet --list-sdks | grep "8.0.")" ]; then
         echo "yes"
     else
@@ -34,7 +34,7 @@ if true; then
         exit 1
     fi
 
-    echo -n " * Checking whether .NET Runtime 'Microsoft.AspNetCore.App' 8.0 for $OS_TYPE has been installed... "
+    echo -n "Checking whether .NET Runtime 'Microsoft.AspNetCore.App' 8.0 for $OS_TYPE has been installed... "
     if [ ! -z "$(dotnet --list-runtimes | grep "Microsoft.AspNetCore.App 8.0.")" ]; then
         echo "yes"
     else
@@ -44,7 +44,7 @@ if true; then
         exit 1
     fi
 
-    echo -n " * Checking whether .NET Runtime 'Microsoft.NETCore.App' 8.0 for $OS_TYPE has been installed... "
+    echo -n "Checking whether .NET Runtime 'Microsoft.NETCore.App' 8.0 for $OS_TYPE has been installed... "
     if [ ! -z "$(dotnet --list-runtimes | grep "Microsoft.NETCore.App 8.0.")" ]; then
         echo "yes"
     else
@@ -54,7 +54,7 @@ if true; then
         exit 1
     fi
 
-    echo " * Cloning 'https://github.com/liziyu0714/FishDeskNextReborn.git'..."
+    echo "Cloning 'https://github.com/liziyu0714/FishDeskNextReborn.git'..."
     export FORMER_DIRECTORY="$PWD"
     mkdir -p ~/.fdnr
     cd ~/.fdnr
@@ -76,7 +76,7 @@ if true; then
         exit 1
     fi
 
-    echo " * Successfully published the project."
+    echo "Successfully published the project."
     echo "Go to '~/.fdnr/FishDeskNextReborn/src/FishDeskNextReborn/bin/Release/net8.0-windows/win-x64/' to check the products."
     echo "Now you can copy the products to your Windows platform. Good luck!"
     cd $FORMER_DIRECTORY
