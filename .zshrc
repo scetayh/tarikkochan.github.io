@@ -78,8 +78,8 @@ function esora() {
 }
 
 alias c='cat -en'
-alias cmi='./configure && make clean && make -j$(sysctl -n hw.logicalcpu) && sudo make install'
-alias cmi-j1='./configure && make clean && make -j1 && sudo make install'
+alias cmi='make distclean; ./configure && make clean && make -j$(sysctl -n hw.logicalcpu) && sudo make install'
+alias cmi-j1='make distclean; ./configure && make clean && make -j1 && sudo make install'
 alias ds0='sudo pmset -a disablesleep 0'
 alias ds1='sudo pmset -a disablesleep 1'
 alias gcc='gcc-14'
