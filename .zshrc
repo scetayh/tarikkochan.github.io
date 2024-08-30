@@ -98,7 +98,7 @@ alias p='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:78
 function v() {
 	${editor} ~/.zshrc
 	source ~/.zshrc
-	[ -d ~/Documents/repos/tarikkochan.github.io ] && rm -rf ~/Documents/repos/tarikkochan.github.io/.zshrc && cp ~/.zshrc ~/Documents/repos/tarikkochan.github.io/ && cd ~/Documents/repos/tarikkochan.github.io/ && git add . && git commit -a -m "update .zshrc" && git push
+	[ -d ~/Documents/repos/tarikkochan.github.io ] && rm -rf ~/Documents/repos/tarikkochan.github.io/.zshrc && cp ~/.zshrc ~/Documents/repos/tarikkochan.github.io/1.zshrc && cd ~/Documents/repos/tarikkochan.github.io/ && git add . && git commit -a -m "update 1.zshrc" && git push
 	[ ! -z ${blogDirectory} ] && blog-genzshrc && blog-deploy
 }
 
