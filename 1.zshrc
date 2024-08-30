@@ -57,7 +57,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/binutils/include"
 export FORCE_UNSAFE_CONFIGURE=1
 export DOTNET_ROOT=$HOME/.dotnet
 export HEXO_ALGOLIA_INDEXING_KEY="43e558ddb34e527169506593c80c7b9d"
-export EDITOR=vim
+export EDITOR=nvim
 export BLOG_DIRECTORY=~/Documents/blog
 
 # shortcuts
