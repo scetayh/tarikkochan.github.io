@@ -18,6 +18,9 @@ export PATH="\
 :/opt/homebrew/opt/unzip/bin\
 :/opt/homebrew/opt/llvm/bin\
 \
+:$HOME/.dotnet\
+:$HOME/.dotnet/tools\
+\
 :$BLOG_DIRECTORY/node_modules/.bin\
 :$GOROOT/bin\
 :$GOPATH/bin\
@@ -30,10 +33,10 @@ export PATH="\
 \
 :/Applications/waifu2x.app/Contents/MacOS\
 :/usr/local/lib/node_modules/\
-:/Users/scetayh/pdfbooklet\
+:$HOME/pdfbooklet\
 :/opt/indeux/\
-:/Users/scetayh/Documents/firework-rs-v0.3.1-x86_64-macos\
-:/Users/scetayh/Documents/ChmlFrp-0.51.2_240715_darwin_arm64\
+:$HOME/Documents/firework-rs-v0.3.1-x86_64-macos\
+:$HOME/Documents/ChmlFrp-0.51.2_240715_darwin_arm64\
 \
 :/System/Cryptexes/App/usr/bin\
 :/usr/bin\
@@ -41,6 +44,7 @@ export PATH="\
 :/usr/sbin\
 :/sbin\
 "
+export LC_ALL=zh_CN.UTF-8
 export LANG=zh_CN.UTF-8
 export PROMPT="\
 (%F{9}exit %?%f)
@@ -51,6 +55,7 @@ export PROMPT="\
 export LDFLAGS="-L/opt/homebrew/opt/binutils/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/binutils/include"
 export FORCE_UNSAFE_CONFIGURE=1
+export DOTNET_ROOT=$HOME/.dotnet
 export HEXO_ALGOLIA_INDEXING_KEY="43e558ddb34e527169506593c80c7b9d"
 export EDITOR=vim
 export BLOG_DIRECTORY=~/Documents/blog
