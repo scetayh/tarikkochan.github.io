@@ -18,7 +18,7 @@ function CheckCommandLineTool() {
 
 function DownloadDotnet() {
     if wget https://dot.net/v1/dotnet-install.sh; then
-        if ! bash dotnet-install.sh $2; then
+        if ! bash dotnet-install.sh "$2"; then
             echo "Error: Cannot install .NET $1 for $OS_TYPE."
             exit 1
         fi
