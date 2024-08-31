@@ -1,6 +1,7 @@
 # variables
 export PATH="\
 /usr/local/bin\
+:/usr/local/aarch64-apple-darwin24.0.0/bin\
 \
 :/opt/homebrew/opt/coreutils/libexec/gnubin\
 :/opt/homebrew/opt/binutils/bin\
@@ -85,7 +86,6 @@ alias viml='sudo $EDITOR /etc/pacman.d/mirrorlist'
 alias vipacman='sudo $EDITOR /etc/pacman.conf'
 alias vipaths='sudo $EDITOR /etc/paths'
 alias srmkh='sudo rm -f ~/.ssh/known_hosts'
-alias su='login root'
 alias sudo='sudo '
 alias sudovi='sudo $EDITOR'
 
