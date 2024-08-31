@@ -86,7 +86,7 @@ alias viml='sudo $EDITOR /etc/pacman.d/mirrorlist'
 alias vipacman='sudo $EDITOR /etc/pacman.conf'
 alias vipaths='sudo $EDITOR /etc/paths'
 alias srmkh='sudo rm -f ~/.ssh/known_hosts'
-alias su='login su'
+alias su='login root'
 alias sudo='sudo '
 alias sudovi='sudo $EDITOR'
 
