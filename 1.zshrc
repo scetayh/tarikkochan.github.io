@@ -74,7 +74,7 @@ alias l='ls -ahlF --color'
 alias n='{ uname -a; neofetch } | lolcat'
 function o() { [ -z "$1" ] && open . || open "$1" }
 alias ping-tarikko='ping -c 3 blog.tarikkochan.top'
-alias p='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=http://127.0.0.1:7890'
+alias p='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
 function quietsource() { [ -f "$1" ] && source "$1" }
 function v() {
 	$EDITOR ~/.zshrc
