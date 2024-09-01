@@ -1,6 +1,6 @@
 .PHONY: deploy
 
 deploy:
-	git add .
+	[ -n "${message}" ] && git add .
 	git commit -a -m "${message}"
 	git push
