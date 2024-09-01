@@ -2,10 +2,9 @@
 
 ## compiler: ssc-0.0.1-b4
 ## host: Darwin YupyeSortaco.local 24.0.0 Darwin Kernel Version 24.0.0: Mon Aug 12 21:27:51 PDT 2024; root:xnu-11215.1.10~5/RELEASE_ARM64_T8112 arm64 arm Darwin
-## date: 20240901T130637Z
+## date: 20240901T131850Z
 
 #!/bin/bash
-# SPDX-License-Identifier: GPL-3.0
 
 ## include >>>
 Slibs_PrintJudgement_AnswerNo () 

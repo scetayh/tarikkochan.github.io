@@ -1,5 +1,4 @@
 #!/bin/bash
-# SPDX-License-Identifier: GPL-3.0
 
 ##include {
 source /usr/local/lib/slibs/printjudgement.h.sh
