@@ -53,7 +53,7 @@ export LANG=zh_CN.UTF-8
 └─┬─┤ %l %x %F{10}%!%f %F{111}%U%~%u%f
   └─> %u%f%F{111}%B%#%b%f \
 "
-[ "$(basename $SHELL)" = "bash" && export PS1=export PS1="\e[01;31m\]\h\[\e[01;34m\] \w $\[\e[00m\] "
+[ "$(basename $SHELL)" = "bash" ] && export PS1=export PS1="\e[01;31m\]\h\[\e[01;34m\] \w $\[\e[00m\] "
 export LDFLAGS="-L/opt/homebrew/opt/binutils/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/binutils/include"
 export FORCE_UNSAFE_CONFIGURE=1
