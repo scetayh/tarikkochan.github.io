@@ -1,3 +1,5 @@
+# Created by newuser for 5.9
+
 # variables
 [ "$USER" != "root" ] && export PATH="\
 /usr/local/bin\
