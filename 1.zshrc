@@ -72,12 +72,18 @@ alias cmi-j1='make distclean; ./configure && make clean && make -j1 && sudo make
 alias ds0='sudo pmset -a disablesleep 0'
 alias ds1='sudo pmset -a disablesleep 1'
 alias l='ls -ahlF --color'
-function mc() { mkdir -p "$1" && cd "$1" }
+function mc() {
+	mkdir -p "$1" && cd "$1"
+}
 alias n='{ uname -a; neofetch } | lolcat'
-function o() { [ -z "$1" ] && open . || open "$1" }
+function o() {
+	[ -z "$1" ] && open . || open "$1"
+}
 alias ping-tarikko='ping -c 3 blog.tarikkochan.top'
 alias p='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
-function quietsource() { [ -f "$1" ] && source "$1" }
+function quietsource() {
+	[ -f "$1" ] && source "$1"
+}
 function v() {
 	$EDITOR ~/.zshrc
 	source ~/.zshrc
