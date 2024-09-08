@@ -1,5 +1,5 @@
 # variables
-export PATH="\
+[ "$USER" != "root" ] && export PATH="\
 /usr/local/bin\
 :/usr/local/aarch64-apple-darwin24.0.0/bin\
 \
@@ -47,7 +47,7 @@ export PATH="\
 "
 export LC_ALL=zh_CN.UTF-8
 export LANG=zh_CN.UTF-8
-export PROMPT="\
+[ "$USER" != "root" ] && export PROMPT="\
 (%F{9}exit %?%f)
 ┌─[%F{219}%n%f@%F{111}%M%f]  %F{215}%B%D%b %*%f    %F{0}╱/( ◕‿‿◕ )\\%f
 └─┬─┤ %l %x %F{10}%!%f %F{111}%U%~%u%f
