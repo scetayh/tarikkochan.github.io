@@ -72,6 +72,7 @@ alias cmi-j1='make distclean; ./configure && make clean && make -j1 && sudo make
 alias ds0='sudo pmset -a disablesleep 0'
 alias ds1='sudo pmset -a disablesleep 1'
 alias l='ls -ahlF --color'
+function mc() { mkdir -p "$1" && cd "$1" }
 alias n='{ uname -a; neofetch } | lolcat'
 function o() { [ -z "$1" ] && open . || open "$1" }
 alias ping-tarikko='ping -c 3 blog.tarikkochan.top'
@@ -92,8 +93,8 @@ alias sudo='sudo '
 alias sudovi='sudo $EDITOR'
 
 # plugins
-quietsource /usr/local/share/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-quietsource /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ "$(basename $SHELL)" = "zsh" ] && quietsource /usr/local/share/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ "$(basename $SHELL)" = "zsh" ] && quietsource /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # homebrew
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
@@ -103,5 +104,3 @@ export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
 export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
-
-fi
