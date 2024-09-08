@@ -47,12 +47,13 @@
 "
 export LC_ALL=zh_CN.UTF-8
 export LANG=zh_CN.UTF-8
-[ "$USER" != "root" ] && export PROMPT="\
+[ "$(basename $SHELL)" = "zsh" ] && export PROMPT="\
 (%F{9}exit %?%f)
 ┌─[%F{219}%n%f@%F{111}%M%f]  %F{215}%B%D%b %*%f    %F{0}╱/( ◕‿‿◕ )\\%f
 └─┬─┤ %l %x %F{10}%!%f %F{111}%U%~%u%f
   └─> %u%f%F{111}%B%#%b%f \
 "
+[ "$(basename $SHELL)" = "bash" && export PS1=export PS1="\e[01;31m\]\h\[\e[01;34m\] \w $\[\e[00m\] "
 export LDFLAGS="-L/opt/homebrew/opt/binutils/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/binutils/include"
 export FORCE_UNSAFE_CONFIGURE=1
