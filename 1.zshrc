@@ -1,7 +1,7 @@
 # Created by newuser for 5.9
 
 # variables
-[ "$USER" != "root" ] && export PATH="\
+[ "$(whoami)" != "root" ] && export PATH="\
 /usr/local/bin\
 :/usr/local/aarch64-apple-darwin24.0.0/bin\
 \
@@ -95,6 +95,17 @@ alias vimake='sudo $EDITOR /etc/portage/make.conf'
 alias viml='sudo $EDITOR /etc/pacman.d/mirrorlist'
 alias vipacman='sudo $EDITOR /etc/pacman.conf'
 alias vipaths='sudo $EDITOR /etc/paths'
+function sleepafter() {
+	[ ! -d /System ] && echo "定时睡眠操作只能在Darwin上运行。"; exit 1
+	[ "$(whoami)" != "root" ] && echo "定时睡眠操作需要超级用户权限。"; exit 1
+	[ -z "$1" ] && echo "定时睡眠操作需要一个秒数。"; exit 1
+	ds1
+	for ((i=0; i<=$1; i++)); do
+		sleep 1
+		echo $(( $1 - i ))
+	done
+	ds0
+	sudo shutdown -s +0
 alias srmkh='sudo rm -f ~/.ssh/known_hosts'
 alias su='login root'
 alias sudo='sudo '

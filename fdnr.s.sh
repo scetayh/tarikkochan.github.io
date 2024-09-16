@@ -1,20 +1,20 @@
 #!/bin/bash
 
 ##include {
-source /usr/local/lib/slibs/printjudgement.h.sh
-source /usr/local/lib/slibs/printmessage.h.sh
+source /usr/local/lib/slibsh/printjudgement.h.sh
+source /usr/local/lib/slibsh/printmessage.h.sh
 ##}
 
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 function CheckCommandLineTool() {
-    Slibs_PrintJudgement_Existence "$2"
+    Slibsh_PrintJudgement_Existence "$2"
     if [ -f "$(which "$2")" ]; then
-        Slibs_PrintJudgement_AnswerYes
+        Slibsh_PrintJudgement_AnswerYes
     else
-        Slibs_PrintJudgement_AnswerNo
-        Slibs_PrintMessage_Fafal_ItemNotFound "$1" "$2"
+        Slibsh_PrintJudgement_AnswerNo
+        Slibsh_PrintMessage_Fafal_ItemNotFound "$1" "$2"
         echo "Install the latest $2 for $OS_TYPE."
         exit 1
     fi
