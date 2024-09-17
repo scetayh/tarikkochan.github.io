@@ -63,9 +63,11 @@ export DOTNET_ROOT=$HOME/.dotnet
 export HEXO_ALGOLIA_INDEXING_KEY="43e558ddb34e527169506593c80c7b9d"
 export EDITOR=nvim
 export BLOG_DIRECTORY=~/Documents/blog
+export BLOG_COMMONS_DIRECTORY=~/Documents/repos/commons.tarikkochan.github.io
 
 # shortcuts
 alias blog-cd='cd $BLOG_DIRECTORY'
+alias blog-commons='cd $BLOG_COMMONS_DIRECTORY && sudo indeux remove && sudo indeux gen && git add . && git commit -a && git push --set-upstream origin main'
 alias blog-deploy='blog-cd && sudo hexo algolia && sudo hexo cl && sudo hexo g && sudo hexo d'
 alias blog-new='blog-cd && sudo hexo n "$1" && sudo chown scetayh: "source/_posts/$1.md" && sudo chmod +rw "source/_posts/$1.md"'
 alias c='cat -n'
