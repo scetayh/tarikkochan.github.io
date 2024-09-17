@@ -86,6 +86,28 @@ alias p='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:78
 function quietsource() {
 	[ -f "$1" ] && source "$1"
 }
+[ -d /etc/pacman.d/ ] && alias roll='sudo pacman -Syyu'
+[ -d /etc/portage/ ] && alias roll='sudo emerge -auvDN @world'
+[ -d /opt/homebrew/ ] && alias roll='brew update && brew upgrade'
+function sleepafter() {
+	[ ! -d /System ] && echo "定时睡眠操作只能在Darwin上运行。" && return 1
+	[ "$(whoami)" != "root" ] && echo "定时睡眠操作需要超级用户权限。" && return 1
+	[ -z "$1" ] && echo "定时睡眠操作需要一个秒数。" && return 1
+	ds1
+	echo -n $1
+	sleep 1
+	for ((i=2; i<=$1; i++)); do
+		echo -n " $(( $1 + 1 - i ))"
+		sleep 1
+	done
+	echo
+	ds0
+	sudo shutdown -s +0
+}
+alias srmkh='sudo rm -f ~/.ssh/known_hosts'
+alias su='login root'
+alias sudo='sudo '
+alias sudovi='sudo $EDITOR'
 function v() {
 	$EDITOR ~/.zshrc
 	source ~/.zshrc
@@ -95,21 +117,6 @@ alias vimake='sudo $EDITOR /etc/portage/make.conf'
 alias viml='sudo $EDITOR /etc/pacman.d/mirrorlist'
 alias vipacman='sudo $EDITOR /etc/pacman.conf'
 alias vipaths='sudo $EDITOR /etc/paths'
-function sleepafter() {
-	[ ! -d /System ] && echo "定时睡眠操作只能在Darwin上运行。"; exit 1
-	[ "$(whoami)" != "root" ] && echo "定时睡眠操作需要超级用户权限。"; exit 1
-	[ -z "$1" ] && echo "定时睡眠操作需要一个秒数。"; exit 1
-	ds1
-	for ((i=0; i<=$1; i++)); do
-		sleep 1
-		echo $(( $1 - i ))
-	done
-	ds0
-	sudo shutdown -s +0
-alias srmkh='sudo rm -f ~/.ssh/known_hosts'
-alias su='login root'
-alias sudo='sudo '
-alias sudovi='sudo $EDITOR'
 
 # plugins
 [ "$(basename $SHELL)" = "zsh" ] && quietsource /usr/local/share/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
