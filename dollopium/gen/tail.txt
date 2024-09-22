@@ -1,0 +1,7 @@
+
+<br />
+
+<button style="width: 160px; height: 40px; font-size: medium;" onclick="terminate()">提交答卷</button>
+</body>
+
+</html>
