@@ -1,12 +1,11 @@
 #!/bin/bash
-
-## compiler: ssc-0.0.1-b5
-## host: Darwin YupyeSortaco.local 24.0.0 Darwin Kernel Version 24.0.0: Mon Aug 12 21:27:51 PDT 2024; root:xnu-11215.1.10~5/RELEASE_ARM64_T8112 arm64 arm Darwin
-## date: 20240916T183141Z
-
+ 
+## compiler: ssc-0.0.1-b9
+## host: Darwin YupyeSortaco.local 24.1.0 Darwin Kernel Version 24.1.0: Mon Sep  2 19:57:26 PDT 2024; root:xnu-11215.40.48~33/RELEASE_ARM64_T8112 arm64 arm Darwin
+## date: 20240922T101629Z
+ 
 #!/bin/bash
 
-## include >>>
 Slibsh_PrintJudgement_AnswerNo () 
 { 
     Slibsh_PrintJudgement_Base;
@@ -117,12 +116,49 @@ Slibsh_PrintMessage_Warning ()
 { 
     Slibsh_PrintMessage "$1" w "$2"
 }
+Ssc_CheckFiles () 
+{ 
+    [ ! -f "$ssc_source" ] && Slibsh_PrintMessage_Fafal_ItemNotFound "$0" "$ssc_source" && exit 1;
+    [ -f "$ssc_target" ] && Slibsh_PrintMessage_Fafal_ItemExists "$0" "$ssc_target" && exit 1;
+    [ ! "${ssc_source: -5}" = ".s.sh" ] && Slibsh_PrintMessage_Fafal_InvalidExtensionName "$0" "$ssc_source" && exit 1
+}
+Ssc_CheckParameters () 
+{ 
+    if [ "$#" -ne 2 ]; then
+        if [ "$#" -eq 0 ]; then
+            Slibsh_PrintMessage_Fafal_SourceExpected "$0";
+        else
+            if [ "$#" -eq 1 ]; then
+                Slibsh_PrintMessage_Fafal_TargetExpected "$0";
+            else
+                if [ "$#" -gt 2 ]; then
+                    Slibsh_PrintMessage_Fafal_TooManyArguments "$0";
+                fi;
+            fi;
+        fi;
+        exit 1;
+    fi
+}
+Ssc_DeleteComments () 
+{ 
+    sed -i '/#/!b;s/^/\n/;ta;:a;s/\n$//;t;s/\n\(\("[^"]*"\)\|\('\''[^'\'']*'\''\)\)/\1\n/;ta;s/\n\([^#]\)/\1\n/;ta;s/\n.*//' "$1"
+}
+Ssc_PrintBrand () 
+{ 
+    echo "$ssc_name (Soras Shell Compiler $ssc_version) $ssc_version";
+    echo "Copyright (C) 2024 Tarikko-ScetayhChan";
+    echo "This is free software; see the source for copying conditions.  There is NO";
+    echo "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+}
 Ssc_WriteCompilationInformation () 
 { 
-    echo "$ssc_compilationInfo" >> "$ssc_target"
+    sed -i "1i\## date: $(date +%Y%m%dT%H%M%SZ)" "$ssc_target";
+    sed -i "1i\## host: $(uname -a)" "$ssc_target";
+    sed -i "1i\## compiler: $ssc_name-$ssc_version" "$ssc_target";
+    sed -i '1i\#!/bin/bash' "$ssc_target";
+    sed -i '1a\ ' "$ssc_target";
+    sed -i '5a\ ' "$ssc_target"
 }
-## <<<
-
 
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
