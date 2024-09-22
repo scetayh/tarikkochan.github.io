@@ -7,26 +7,27 @@
     <script src="https://tarikkochan.top/dollopium/js/countdown-functions.js"></script>
     <script src="https://tarikkochan.top/dollopium/js/terminate.js"></script>
     <script src="https://tarikkochan.top/dollopium/js/change-color.js"></script>
-
-    <title>中国古代诗词简易测试</title>
+    <script>
+        // by minute, must be a integer
+        var totalTime = 1;
+    </script>
+    
+    <title>洪泽湖监狱生产安全知识测试</title>
 </head>
 
 <body>
 
-    <h1>中国古代诗词简易测试</h1>
+    <h1>洪泽湖监狱生产安全知识测试</h1>
 
     <p>
         题数：100
         <br />
-        总计时间：60 分钟
+        总计时间：60分钟
         <br />
         剩余时间（自动交卷）：<span id="min"></span> 分 <span id="sec"></span> 秒
     </p>
 
     <script>
-        // by minute, must be a integer
-        var totalTime = 1;
-
         var dateStart = new Date();
         var timestampStart = dateStart.getTime();
 
@@ -59,3 +60,30 @@
     </div>
 
     <br />
+
+    <fieldset class="question">
+        <p id="1">1. “长风破浪会有时, 直挂云帆济沧海。” 出自下列哪一首诗？</p>
+        <label id="1"><input type="radio" name="answer1" value="1" />A. 《行路难》</label>
+        <br />
+        <label><input type="radio" name="answer1" value="0" />B. 《蜀道难》</label>
+        <br />
+        <label><input type="radio" name="answer1" value="0" />C. 《长恨歌》</label>
+        <br />
+    </fieldset>
+
+    <fieldset class="question">
+        <p id="2">2. “长风破浪会有时, 直挂云帆济沧海。” 出自下列哪一首诗？</p>
+        <label id="2"><input type="radio" name="answer2" value="1" />A. 《行路难》</label>
+        <br />
+        <label><input type="radio" name="answer2" value="0" />B. 《蜀道难》</label>
+        <br />
+        <label><input type="radio" name="answer2" value="0" />C. 《长恨歌》</label>
+        <br />
+    </fieldset>
+
+<br />
+
+<button style="width: 160px; height: 40px; font-size: medium;" onclick="terminate()">提交答卷</button>
+</body>
+
+</html>
