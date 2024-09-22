@@ -1,3 +1,6 @@
+// by minute, must be a integer
+var totalTime = 1;
+
 var dateStart = new Date();
 var timestampStart = dateStart.getTime();
 
