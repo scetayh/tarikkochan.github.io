@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Times New Roman';
+    src: url("../fonts/Times.ttc");
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
