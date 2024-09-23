@@ -12,7 +12,7 @@ function terminate() {
         }
 
         var totalScores = 0;
-        var qestions = document.getElementsByClassName("question");
+        var qestions = document.getElementsByClassName("singleQuestion");
 
         for (var i = 0; i < qestions.length; i++) {
             var count = 0;
