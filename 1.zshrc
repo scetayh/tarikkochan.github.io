@@ -94,7 +94,7 @@ function quietsource() {
 function sleepafter() {
 	[ ! -d /System ] && echo "定时睡眠操作只能在Darwin上运行。" && return 1
 	[ "$(whoami)" != "root" ] && echo "定时睡眠操作需要超级用户权限。" && return 1
-	[ -z "$1" ] && echo "定时睡眠操作需要一个秒数。" && return 1
+	[ ! "$1" -gt -1 ] && echo "定时睡眠操作需要一个有效的秒数。" && return 1
 	ds1
 	echo -n $1
 	sleep 1
