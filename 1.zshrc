@@ -117,8 +117,8 @@ function t() {
 		tree -alFL "$1" --dirsfirst
 	fi
 }
-[ -d /etc/portage ] && alias time+='date -s "20250101"'
-[ -d /etc/portage ] && alias time-='ntpdate -b -u 0.gentoo.pool.ntp.org'
+[ -d /etc/portage ] && alias t+='sudo date -s "20300701"'
+[ -d /etc/portage ] && alias t-='sudo ntpdate -b -u 0.gentoo.pool.ntp.org && sudo hwclock --systohc'
 function v() {
 	$EDITOR ~/.zshrc
 	source ~/.zshrc
