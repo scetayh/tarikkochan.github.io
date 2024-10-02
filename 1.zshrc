@@ -110,6 +110,13 @@ alias srmkh='sudo rm -f ~/.ssh/known_hosts'
 alias su='login root'
 alias sudo='sudo '
 alias sudovi='sudo $EDITOR'
+function t() {
+	if [ -z "$1" ]; then
+		tree -alF --dirsfirst
+	else
+		tree -alFL "$1" --dirsfirst
+	fi
+}
 function v() {
 	$EDITOR ~/.zshrc
 	source ~/.zshrc
@@ -123,6 +130,7 @@ alias vipaths='sudo $EDITOR /etc/paths'
 # plugins
 [ "$(basename $SHELL)" = "zsh" ] && quietsource /usr/local/share/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ "$(basename $SHELL)" = "zsh" ] && quietsource /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ -d /etc/portage/ ] && {autoload -U compinit promptinit; compinit; promptinit; prompt gentoo}
 
 # homebrew
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
