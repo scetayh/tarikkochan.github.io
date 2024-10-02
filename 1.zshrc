@@ -117,6 +117,8 @@ function t() {
 		tree -alFL "$1" --dirsfirst
 	fi
 }
+[ -d /etc/portage ] && alias time+='date -s "20250101"'
+[ -d /etc/portage ] && alias time-='ntpdate -b -u 0.gentoo.pool.ntp.org'
 function v() {
 	$EDITOR ~/.zshrc
 	source ~/.zshrc
