@@ -82,7 +82,7 @@ export BLOG_DIRECTORY=~/Documents/blog;
 export BLOG_COMMONS_DIRECTORY=~/Documents/repos/commons.tarikkochan.github.io;
 
 # prompt
-export PS1="\e[01;31m\]\h\[\e[01;34m\] \w $\[\e[00m\] ";
+export PS1='\e[01;34m\]$(e=$?; (( e )) && echo "$e ")\e[01;31m\]\h\[\e[01;34m\] \w $\[\e[00m\] '
 export PROMPT="\
 (%F{9}exit %?%f)
 ┌─[%F{219}%n%f@%F{111}%M%f]  %F{215}%B%D%b %*%f    %F{0}╱/( ◕‿‿◕ )\\%f
