@@ -2,10 +2,10 @@
 
 # environment judgements
 function usingBash() {
-	[ "$(basename $SHELL)" = "bash" ];
+	[[ "$0" =~ "bash" ]];
 }
 function usingZsh() {
-	[ "$(basename $SHELL)" = "zsh" ];
+	[[ "$0" =~ "zsh" ]];
 }
 function isRoot() {
 	[ "$(whoami)" = "root" ];
@@ -82,7 +82,7 @@ export BLOG_COMMONS_DIRECTORY=~/Documents/repos/commons.tarikkochan.github.io;
 
 # prompt
 export PS1="\e[01;31m\]\h\[\e[01;34m\] \w $\[\e[00m\] ";
-usingZsh && export PROMPT="\
+export PROMPT="\
 (%F{9}exit %?%f)
 ┌─[%F{219}%n%f@%F{111}%M%f]  %F{215}%B%D%b %*%f    %F{0}╱/( ◕‿‿◕ )\\%f
 └─┬─┤ %l %x %F{10}%!%f %F{111}%U%~%u%f
