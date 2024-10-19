@@ -54,6 +54,7 @@ onOSX && ! isRoot && export PATH="\
 :$HEXO_ALGOLIA_INDEXING_KEY:/Applications/waifu2x.app/Contents/MacOS\
 :/usr/local/lib/node_modules/\
 :$HOME/pdfbooklet\
+:/Users/scetayh/Documents/repos/soras/include\
 :/opt/indeux/\
 :$HOME/Documents/firework-rs-v0.3.1-x86_64-macos\
 :$HOME/Documents/ChmlFrp-0.51.2_240715_darwin_arm64\
