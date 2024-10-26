@@ -151,10 +151,10 @@ function v() {
 	$EDITOR ~/.zshrc;
 	source ~/.zshrc;
 	onOSX && \
-		cp ~/.zshrc ~/Documents/repos/tarikkochan.github.io/1.zshrc && \
+		cp ~/.zshrc ~/Documents/repos/tarikkochan.github.io/zshrc && \
 			cd ~/Documents/repos/tarikkochan.github.io/ && \
 				git add . && \
-					git commit -a -m "update 1.zshrc" && \
+					git commit -a -m "update zshrc" && \
 						git push;
 }
 onOSX && {
