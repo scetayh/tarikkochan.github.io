@@ -21,7 +21,7 @@ function onGentoo() {
 }
 
 # PATH
-onOSX && export PATH="$(sed ':a;N;s/\n/:/g;ba' /etc/paths)"
+onOSX && export PATH=$(sed ':a;N;s/\n/:/g;ba' /etc/paths)
 onOSX && ! isRoot && export PATH="\
 /usr/local/bin\
 :/usr/local/aarch64-apple-darwin24.0.0/bin\
