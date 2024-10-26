@@ -65,7 +65,7 @@ onOSX && ! isRoot && export PATH="\
 :/usr/sbin\
 :/sbin\
 ";
-onOSX && isRoot && export PATH=$(sed ':a;N;s/\n/:/g;ba' /etc/paths):$PATH
+onOSX && isRoot && export PATH=$(gsed ':a;N;s/\n/:/g;ba' /etc/paths):$PATH
 
 # variables
 onOSX && \
