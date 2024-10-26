@@ -65,6 +65,7 @@ onOSX && ! isRoot && export PATH="\
 :/usr/sbin\
 :/sbin\
 ";
+onOSX && isRoot && export PATH=$(gsed ':a;N;s/\n/:/g;ba' /etc/paths):$PATH;
 
 # variables
 onOSX && \
@@ -103,14 +104,13 @@ alias vpaths='sudo $EDITOR /etc/paths';
 onOSX && \
 	{
 		alias blog-cd='cd $BLOG_DIRECTORY';
-		alias blog-commons='cd $BLOG_COMMONS_DIRECTORY && sudo indeux remove && sudo indeux gen && git add . && git commit -a && git push --set-upstream origin main';
+		alias blog-commons='cd $BLOG_COMMONS_DIRECTORY && make';
 		alias blog-deploy='blog-cd && sudo hexo algolia && sudo hexo cl && sudo hexo g && sudo hexo d';
 		alias blog-new='blog-cd && sudo hexo n "$1" && sudo chown scetayh: "source/_posts/$1.md" && sudo chmod +rw "source/_posts/$1.md"';
 		alias ds0='sudo pmset -a disablesleep 0';
 		alias ds1='sudo pmset -a disablesleep 1';
 		alias p='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890';
 		alias roll='brew update && brew upgrade';
-		alias su='login root';
 	}
 onArch && \
 	{
@@ -151,10 +151,10 @@ function v() {
 	$EDITOR ~/.zshrc;
 	source ~/.zshrc;
 	onOSX && \
-		cp ~/.zshrc ~/Documents/repos/tarikkochan.github.io/1.zshrc && \
+		cp ~/.zshrc ~/Documents/repos/tarikkochan.github.io/zshrc && \
 			cd ~/Documents/repos/tarikkochan.github.io/ && \
 				git add . && \
-					git commit -a -m "update 1.zshrc" && \
+					git commit -a -m "update zshrc" && \
 						git push;
 }
 onOSX && {
