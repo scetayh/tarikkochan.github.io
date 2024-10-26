@@ -199,10 +199,14 @@ onOSX && \
 			}
 onGentoo && \
 	{
-		autoload -U compinit promptinit;
-		compinit;
-		promptinit;
-		prompt gentoo;
+		[ -f $(which autoload) ] && \
+			autoload -U compinit promptinit;
+		[ -f $(which compinit) ] && \
+			compinit;
+		[ -f $(which promptinit) ] && \
+			promptinit;
+		[ -f $(which prompt) ] && \
+			prompt gentoo;
 	}
 
 # homebrew
