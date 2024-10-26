@@ -65,7 +65,7 @@ onOSX && ! isRoot && export PATH="\
 :/usr/sbin\
 :/sbin\
 ";
-onOSX && isRoot && export PATH=$(gsed ':a;N;s/\n/:/g;ba' /etc/paths):$PATH
+onOSX && isRoot && export PATH=$(gsed ':a;N;s/\n/:/g;ba' /etc/paths):$PATH;
 
 # variables
 onOSX && \
@@ -111,7 +111,6 @@ onOSX && \
 		alias ds1='sudo pmset -a disablesleep 1';
 		alias p='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890';
 		alias roll='brew update && brew upgrade';
-		alias su='login root';
 	}
 onArch && \
 	{
