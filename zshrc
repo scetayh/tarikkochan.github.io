@@ -173,7 +173,7 @@ function v() {
 	$EDITOR ~/.zshrc;
 	s;
 	onOSX && \
-		cp ~/.zshrc ~/Documents/repos/tarikkochan.github.io/zshrc && \
+		cp ~/.zshrc ~/Documents/repos/tarikkochan.github.io/ && \
 			cd ~/Documents/repos/tarikkochan.github.io/ && \
 				git add . && \
 					git commit -a -m "update zshrc" && \
