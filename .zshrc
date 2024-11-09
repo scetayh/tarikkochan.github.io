@@ -153,13 +153,13 @@ function n() {
 }
 
 function s() {
-	if usingBash; then {
-		source ~/.bashrc;
-	}
-	elif usingZsh; then {
-		source ~/.zshrc;
-	}
-	fi;
+	usingBash && \
+		source ~/.bashrc && \
+			return 0;
+
+	usingZsh && \
+		source ~/.zshrc && \
+			return 0;
 }
 
 function t() {
