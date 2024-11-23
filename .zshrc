@@ -153,13 +153,8 @@ function n() {
 }
 
 function s() {
-	usingBash && \
-		source ~/.bashrc && \
-			return 0;
-
-	usingZsh && \
-		source ~/.zshrc && \
-			return 0;
+		source ~/.bashrc;
+		source ~/.zshrc;
 }
 
 function t() {
@@ -189,6 +184,7 @@ onOSX && {
 			open . || \
 				open "$1";
 	}
+
 	function sleepafter () {
 		[ ! -d /System ] && \
 			echo "macOS supported only" && \
