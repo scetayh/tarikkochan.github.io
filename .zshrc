@@ -141,6 +141,17 @@ onGentoo && {
 
 # shortcuts as functions
 
+function loading() {
+	while true; do {
+        for i in '|' '/' '-' '\'; do {
+                printf \\b$i;
+                sleep 0.05;
+        }
+        done;
+	}
+    done
+}
+
 function n() {
 	[ -f "$(which lolcat)" ] && {
 		uname -a;
