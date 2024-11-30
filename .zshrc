@@ -141,6 +141,10 @@ onGentoo && {
 
 # shortcuts as functions
 
+function alx() {
+	curl https://alx.sh | sh;
+}
+
 function loading() {
 	while true; do {
         for i in '|' '/' '-' '\'; do {
