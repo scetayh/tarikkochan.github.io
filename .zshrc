@@ -122,6 +122,7 @@ onOSX && {
 	alias blog-new='blog-cd && sudo hexo n "$1" && sudo chown scetayh: "source/_posts/$1.md" && sudo chmod +rw "source/_posts/$1.md"';
 	alias ds0='sudo pmset -a disablesleep 0';
 	alias ds1='sudo pmset -a disablesleep 1';
+	alias du='diskutil';
 	alias p='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890';
 	alias roll='brew update && brew upgrade';
 }
