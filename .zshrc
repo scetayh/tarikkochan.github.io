@@ -142,6 +142,7 @@ onGentoo && {
 # shortcuts as functions
 
 function alx() {
+	p;
 	curl https://alx.sh | sh;
 }
 
