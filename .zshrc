@@ -146,6 +146,11 @@ function alx() {
 	curl https://alx.sh | sh;
 }
 
+function alx-ub() {
+	p;
+	curl -sL https://ubuntuasahi.org/install | sh;
+}
+
 function loading() {
 	while true; do {
         for i in '|' '/' '-' '\'; do {
