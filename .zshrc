@@ -74,8 +74,8 @@ onOSX && \
 		export PATH=$PATH:/sbin;
 	}	
 
-isRoot && \
-	export PATH=$(/opt/homebrew/bin/gsed ':a;N;s/\n/:/g;ba' /etc/paths):$PATH;
+#isRoot && \
+#	export PATH=$(/opt/homebrew/bin/gsed ':a;N;s/\n/:/g;ba' /etc/paths):$PATH;
 
 # variables
 
