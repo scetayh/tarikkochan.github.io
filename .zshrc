@@ -143,12 +143,10 @@ onGentoo && {
 # shortcuts as functions
 
 function alx() {
-	p;
 	curl https://alx.sh | sh;
 }
 
 function alx-ub() {
-	p;
 	curl -sL https://ubuntuasahi.org/install | sh;
 }
 
