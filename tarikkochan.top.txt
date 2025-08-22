@@ -1,0 +1,75 @@
+;;
+;; Domain:     tarikkochan.top.
+;; Exported:   2025-08-22 10:33:43
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+tarikkochan.top	3600	IN	SOA	james.ns.cloudflare.com. dns.cloudflare.com. 2050752542 10000 2400 604800 3600
+
+;; NS Records
+tarikkochan.top.	86400	IN	NS	james.ns.cloudflare.com.
+tarikkochan.top.	86400	IN	NS	keyla.ns.cloudflare.com.
+
+;; A Records
+blog.tarikkochan.top.	1	IN	A	185.199.111.153 ; cf_tags=cf-proxied:true
+blog.tarikkochan.top.	1	IN	A	185.199.110.153 ; cf_tags=cf-proxied:true
+blog.tarikkochan.top.	1	IN	A	185.199.109.153 ; cf_tags=cf-proxied:true
+blog.tarikkochan.top.	1	IN	A	185.199.108.153 ; cf_tags=cf-proxied:true
+commons.tarikkochan.top.	1	IN	A	185.199.111.153 ; cf_tags=cf-proxied:true
+commons.tarikkochan.top.	1	IN	A	185.199.110.153 ; cf_tags=cf-proxied:true
+commons.tarikkochan.top.	1	IN	A	185.199.109.153 ; cf_tags=cf-proxied:true
+commons.tarikkochan.top.	1	IN	A	185.199.108.153 ; cf_tags=cf-proxied:true
+dollopium.tarikkochan.top.	1	IN	A	185.199.111.153 ; cf_tags=cf-proxied:true
+dollopium.tarikkochan.top.	1	IN	A	185.199.110.153 ; cf_tags=cf-proxied:true
+dollopium.tarikkochan.top.	1	IN	A	185.199.109.153 ; cf_tags=cf-proxied:true
+dollopium.tarikkochan.top.	1	IN	A	185.199.108.153 ; cf_tags=cf-proxied:true
+mirrors.tarikkochan.top.	1	IN	A	185.199.108.153 ; cf_tags=cf-proxied:true
+mirrors.tarikkochan.top.	1	IN	A	185.199.110.153 ; cf_tags=cf-proxied:true
+mirrors.tarikkochan.top.	1	IN	A	185.199.109.153 ; cf_tags=cf-proxied:true
+mirrors.tarikkochan.top.	1	IN	A	185.199.111.153 ; cf_tags=cf-proxied:true
+sdick-old.tarikkochan.top.	1	IN	A	185.199.111.153 ; cf_tags=cf-proxied:true
+sdick-old.tarikkochan.top.	1	IN	A	185.199.110.153 ; cf_tags=cf-proxied:true
+sdick-old.tarikkochan.top.	1	IN	A	185.199.109.153 ; cf_tags=cf-proxied:true
+sdick-old.tarikkochan.top.	1	IN	A	185.199.108.153 ; cf_tags=cf-proxied:true
+sdick.tarikkochan.top.	1	IN	A	185.199.111.153 ; cf_tags=cf-proxied:true
+sdick.tarikkochan.top.	1	IN	A	185.199.110.153 ; cf_tags=cf-proxied:true
+sdick.tarikkochan.top.	1	IN	A	185.199.109.153 ; cf_tags=cf-proxied:true
+sdick.tarikkochan.top.	1	IN	A	185.199.108.153 ; cf_tags=cf-proxied:true
+
+;; CNAME Records
+sdickd-1.tarikkochan.top.	1	IN	CNAME	301cb948-7201-4eeb-abdb-59397522f111.cfargotunnel.com. ; cf_tags=cf-proxied:true
+sdickd-2.tarikkochan.top.	1	IN	CNAME	f386326a-19fc-4be8-9b09-5e6316cf1e4b.cfargotunnel.com. ; cf_tags=cf-proxied:true
+sdickd.tarikkochan.top.	1	IN	CNAME	def28202-b364-42fe-992c-e38fb1a36969.cfargotunnel.com. ; cf_tags=cf-proxied:true
+tarikkochan.top.	1	IN	CNAME	e3d17b85-bfdc-4258-b0f0-f6459bc26746.cfargotunnel.com. ; 不可关闭代理（即橙色小云朵），否则ssh/sftp/git等依赖ssh的服务服务将无法连接到本地址。 cf_tags=cf-proxied:true
+www.tarikkochan.top.	1	IN	CNAME	tarikkochan.top. ; cf_tags=cf-proxied:true
+
+;; MX Records
+tarikkochan.top.	600	IN	MX	10 mxbiz2.qq.com.
+tarikkochan.top.	600	IN	MX	5 mxbiz1.qq.com.
+tarikkochan.top.	1	IN	MX	5 mail.linecom.net.cn.
+
+;; SRV Records
+play.tarikkochan.top.	1	IN	SRV	5 0 27461 us-sjc-bgp-2.of-7af93c01.shop.
+
+;; TXT Records
+tarikkochan.top.	1	IN	TXT	"v=spf1 ip4:43.155.78.60 -all"
