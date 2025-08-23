@@ -1,10 +1,5 @@
 [
     {
-        "name": "幻想界域巡録",
-        "domain": "",
-        "description": "TarikkoChan's Second Level Domain Directory"
-    },
-    {
         "name": "絵空随筆神域",
         "domain": "blog",
         "description": "Esora Somesaki Blog Collection"
@@ -18,6 +13,11 @@
         "name": "幽冥封卷録",
         "domain": "dollupium",
         "description": "Assigned Motivation from Publicly Owned Conference"
+    },
+    {
+        "name": "幻想界域巡録",
+        "domain": "index",
+        "description": "TarikkoChan's Second Level Domain Index"
     },
     {
         "name": "鏡映幻夢殿",

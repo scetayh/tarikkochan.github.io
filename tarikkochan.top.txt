@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     tarikkochan.top.
-;; Exported:   2025-08-22 10:33:43
+;; Exported:   2025-08-23 01:49:54
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,7 +24,7 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-tarikkochan.top	3600	IN	SOA	james.ns.cloudflare.com. dns.cloudflare.com. 2050752542 10000 2400 604800 3600
+tarikkochan.top	3600	IN	SOA	james.ns.cloudflare.com. dns.cloudflare.com. 2050758039 10000 2400 604800 3600
 
 ;; NS Records
 tarikkochan.top.	86400	IN	NS	james.ns.cloudflare.com.
@@ -43,6 +43,10 @@ dollopium.tarikkochan.top.	1	IN	A	185.199.111.153 ; cf_tags=cf-proxied:true
 dollopium.tarikkochan.top.	1	IN	A	185.199.110.153 ; cf_tags=cf-proxied:true
 dollopium.tarikkochan.top.	1	IN	A	185.199.109.153 ; cf_tags=cf-proxied:true
 dollopium.tarikkochan.top.	1	IN	A	185.199.108.153 ; cf_tags=cf-proxied:true
+index.tarikkochan.top.	1	IN	A	185.199.111.153 ; cf_tags=cf-proxied:true
+index.tarikkochan.top.	1	IN	A	185.199.110.153 ; cf_tags=cf-proxied:true
+index.tarikkochan.top.	1	IN	A	185.199.109.153 ; cf_tags=cf-proxied:true
+index.tarikkochan.top.	1	IN	A	185.199.108.153 ; cf_tags=cf-proxied:true
 mirrors.tarikkochan.top.	1	IN	A	185.199.108.153 ; cf_tags=cf-proxied:true
 mirrors.tarikkochan.top.	1	IN	A	185.199.110.153 ; cf_tags=cf-proxied:true
 mirrors.tarikkochan.top.	1	IN	A	185.199.109.153 ; cf_tags=cf-proxied:true
