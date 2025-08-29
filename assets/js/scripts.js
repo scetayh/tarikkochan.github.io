@@ -13,10 +13,10 @@ async function renderDomainList() {
             
             li.innerHTML = `
                 <a href="https://${item.domain}.tarikkochan.top" class="domain-link" target="_blank">
-                    <span class="domain-name">${item.name}</span>
+                    <span class="domain-name">${item.title}<span class="domain-subname">　〜 ${item.subtitle}</span></span>
                     <span class="domain-url">${item.domain}.tarikkochan.top</span>
                 </a>
-                <div class="domain-desc">～ ${item.description}</div>
+                <div class="domain-desc">『${item.albumtitle}　〜 ${item.albumsubtitle}』 ${item.number}．</div>
             `;
             
             domainList.appendChild(li);

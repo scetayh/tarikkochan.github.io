@@ -1,62 +1,98 @@
 [
     {
-        "name": "絵空随筆神域",
+        "title": "絵空随筆神域",
+        "subtitle": "Esora Somesaki Blog Collection",
         "domain": "blog",
-        "description": "Esora Somesaki Blog Collection"
+        "albumtitle": "幻想界域伝説",
+        "albumsubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
+        "number": "１"
     },
     {
-        "name": "秘封共享庫",
+        "title": "秘封共享庫",
+        "subtitle": "Selfish Pseudo Repository of Commons",
         "domain": "commons",
-        "description": "Selfish Pseudo Repository of Commons"
+        "albumtitle": "幻想界域伝説",
+        "albumsubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
+        "number": "２"
     },
     {
-        "name": "幽冥封卷録",
-        "domain": "dollupium",
-        "description": "Assigned Motivation from Publicly Owned Conference"
+        "title": "幽冥封卷则",
+        "subtitle": "Assigned Motivation from Publicly Owned Conference",
+        "domain": "dollopium",
+        "albumtitle": "幻想界域伝説",
+        "albumsubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
+        "number": "３"
     },
     {
-        "name": "幻想界域巡録",
+        "title": "幻想界域巡録",
+        "subtitle": "TarikkoChan's Second Level Domain Index",
         "domain": "index",
-        "description": "TarikkoChan's Second Level Domain Index"
+        "albumtitle": "幻想界域伝説",
+        "albumsubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
+        "number": "４"
     },
     {
-        "name": "鏡映幻夢殿",
+        "title": "鏡映幻夢殿",
+        "subtitle": "Mapped Reflection Treasury",
         "domain": "mirrors.sdick",
-        "description": "Mapped Reflection Treasury"
+        "albumtitle": "幻想界域伝説",
+        "albumsubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
+        "number": "５"
     },
     {
-        "name": "斯迪克的歷史",
+        "title": "笛客樂団の歷史",
+        "subtitle": "History of the Dick",
         "domain": "sdick-old",
-        "description": "History of Beta-Version Sdick"
+        "albumtitle": "大空笛客",
+        "albumsubtitle": "Dickal Astronomy",
+        "number": "１４"
     },
     {
-        "name": "創賠部奇譚·靜",
+        "title": "秘封創培幻想名録",
+        "subtitle": "128 Victims' Scattered Fair Directory",
         "domain": "sdick",
-        "description": "Static Horrible Story of Ministry of Innovation Training"
+        "albumtitle": "創培部奇譚",
+        "albumsubtitle": "Horrible Story of Shikō Chūgaku Sōbai-Bu",
+        "number": "３"
     },
     {
-        "name": "創賠部奇譚·動1",
+        "title": "黑色牛像",
+        "subtitle": "Mascot of Sōbai-Bu",
         "domain": "sdickd-1",
-        "description": "Dynamic Horrible Story of Ministry of Innovation Training 1"
+        "albumtitle": "創培部奇譚",
+        "albumsubtitle": "Horrible Story of Shikō Chūgaku Sōbai-Bu",
+        "number": "６"
     },
     {
-        "name": "創賠部奇譚·動2",
+        "title": "灯花的三件事",
+        "subtitle": "Ri Takeshi's 3 Things",
         "domain": "sdickd-2",
-        "description": "Dynamic Horrible Story of Ministry of Innovation Training 2"
+        "albumtitle": "創培部奇譚",
+        "albumsubtitle": "Horrible Story of Shikō Chūgaku Sōbai-Bu",
+        "number": "８"
     },
     {
-        "name": "創賠部奇譚·動0",
+        "title": "屈指可數的日子",
+        "subtitle": "Finger-Countable Days",
         "domain": "sdickd",
-        "description": "Dynamic Horrible Story of Ministry of Innovation Training 0"
+        "albumtitle": "創培部奇譚",
+        "albumsubtitle": "Horrible Story of Shikō Chūgaku Sōbai-Bu",
+        "number": "９"
     },
     {
-        "name": "輪迴回環結界",
+        "title": "輪迴回環結界",
+        "subtitle": "Reincarnation Loop of the Directory",
         "domain": "www",
-        "description": "Reincarnation Loop of the Directory"
+        "albumtitle": "幻想界域伝説",
+        "albumsubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
+        "number": "６"
     },
     {
-        "name": "地下創世記",
+        "title": "地下創世記",
+        "subtitle": "Ionic Fish's Mine & Craft Carnival Server",
         "domain": "play",
-        "description": "Ionic Fish's Mine & Craft Carnival Server"
+        "albumtitle": "幻想界域伝説",
+        "albumsubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
+        "number": "７"
     }
 ]
