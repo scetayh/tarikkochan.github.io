@@ -16,7 +16,7 @@ async function renderDomainList() {
                     <span class="domain-name">${item.title}<span class="domain-subname">　〜 ${item.subtitle}</span></span>
                     <span class="domain-url">${item.domain}.tarikkochan.top</span>
                 </a>
-                <div class="domain-desc">『${item.albumtitle}　〜 ${item.albumsubtitle}』 ${item.number}．</div>
+                <div class="domain-desc">『${item.albumTitle}　〜 ${item.albumSubtitle}』 ${item.number}．</div>
             `;
             
             domainList.appendChild(li);
