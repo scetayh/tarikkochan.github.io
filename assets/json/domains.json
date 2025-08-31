@@ -1,11 +1,19 @@
 [
     {
-        "title": "絵空随筆神域",
-        "subtitle": "Esora Somesaki Blog Collection",
+        "title": "絵空随筆神域·靜",
+        "subtitle": "Esora Somesaki Blog Collection Static",
         "domain": "blog",
         "albumTitle": "幻想界域伝説",
         "albumSubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
         "number": "１"
+    },
+    {
+        "title": "絵空随筆神域·動",
+        "subtitle": "Esora Somesaki Blog Collection Dynamic",
+        "domain": "blogd",
+        "albumTitle": "幻想界域伝説",
+        "albumSubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
+        "number": "８"
     },
     {
         "title": "秘封共享庫",
@@ -54,22 +62,6 @@
         "albumTitle": "創培部奇譚",
         "albumSubtitle": "Horrible Story of Shikō Chūgaku Sōbai-Bu",
         "number": "３"
-    },
-    {
-        "title": "黑色牛像",
-        "subtitle": "Mascot of Sōbai-Bu",
-        "domain": "sdickd-1",
-        "albumTitle": "創培部奇譚",
-        "albumSubtitle": "Horrible Story of Shikō Chūgaku Sōbai-Bu",
-        "number": "６"
-    },
-    {
-        "title": "灯花的三件事",
-        "subtitle": "Ri Takeshi's 3 Things",
-        "domain": "sdickd-2",
-        "albumTitle": "創培部奇譚",
-        "albumSubtitle": "Horrible Story of Shikō Chūgaku Sōbai-Bu",
-        "number": "８"
     },
     {
         "title": "屈指可數的日子",
