@@ -1,90 +1,42 @@
 [
     {
-        "title": "絵空随筆神域·靜",
-        "subtitle": "Esora Somesaki Blog Collection Static",
-        "domain": "blog",
+        "title": "絵空随筆神域",
+        "subtitle": "Esora Somesaki Blog Collection",
+        "domain": "blog.tarikkochan.top",
         "albumTitle": "幻想界域伝説",
         "albumSubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
-        "number": "１"
-    },
-    {
-        "title": "絵空随筆神域·動",
-        "subtitle": "Esora Somesaki Blog Collection Dynamic",
-        "domain": "blogd",
-        "albumTitle": "幻想界域伝説",
-        "albumSubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
-        "number": "８"
+        "number": "1"
     },
     {
         "title": "秘封共享庫",
         "subtitle": "Selfish Pseudo Repository of Commons",
-        "domain": "commons",
+        "domain": "commons.tarikkochan.top",
         "albumTitle": "幻想界域伝説",
         "albumSubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
-        "number": "２"
-    },
-    {
-        "title": "幽冥封卷则",
-        "subtitle": "Assigned Motivation from Publicly Owned Conference",
-        "domain": "dollopium",
-        "albumTitle": "幻想界域伝説",
-        "albumSubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
-        "number": "３"
-    },
-    {
-        "title": "幻想界域巡録",
-        "subtitle": "TarikkoChan's Second Level Domain Index",
-        "domain": "index",
-        "albumTitle": "幻想界域伝説",
-        "albumSubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
-        "number": "４"
-    },
-    {
-        "title": "鏡映幻夢殿",
-        "subtitle": "Mapped Reflection Treasury",
-        "domain": "mirrors.sdick",
-        "albumTitle": "幻想界域伝説",
-        "albumSubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
-        "number": "５"
+        "number": "2"
     },
     {
         "title": "笛客樂団の歷史",
         "subtitle": "History of the Dick",
-        "domain": "sdick-old",
+        "domain": "sdick-old.tarikkochan.top",
         "albumTitle": "大空笛客",
         "albumSubtitle": "Dickal Astronomy",
-        "number": "１４"
+        "number": "14"
     },
     {
         "title": "秘封創培幻想名録",
         "subtitle": "128 Victims' Scattered Fair Directory",
-        "domain": "sdick",
+        "domain": "sdick.tarikkochan.top",
         "albumTitle": "創培部奇譚",
         "albumSubtitle": "Horrible Story of Shikō Chūgaku Sōbai-Bu",
-        "number": "３"
-    },
-    {
-        "title": "屈指可數的日子",
-        "subtitle": "Finger-Countable Days",
-        "domain": "sdickd",
-        "albumTitle": "創培部奇譚",
-        "albumSubtitle": "Horrible Story of Shikō Chūgaku Sōbai-Bu",
-        "number": "９"
-    },
-    {
-        "title": "輪迴回環結界",
-        "subtitle": "Reincarnation Loop of the Directory",
-        "domain": "www",
-        "albumTitle": "幻想界域伝説",
-        "albumSubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
-        "number": "６"
+        "number": "3"
     },
     {
         "title": "地下創世記",
         "subtitle": "Ionic Fish's Mine & Craft Carnival Server",
-        "domain": "play",
+        "domain": "play.tarikkochan.top",
         "albumTitle": "幻想界域伝説",
         "albumSubtitle": "Fairy Fantasy from TarikkoChan the Messenger",
-        "number": "７"
+        "number": "7"
     }
 ]
