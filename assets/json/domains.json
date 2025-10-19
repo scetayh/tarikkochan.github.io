@@ -5,7 +5,7 @@
         "domain": "tarikkochan.top",
         "albumTitle": "幻想界域伝説",
         "albumSubtitle": "Fairy Fantasy from Tarikko Chan the Messenger",
-        "number": "1"
+        "number": "3"
     },
     {
         "title": "赜月境界奇譚",
@@ -13,7 +13,7 @@
         "domain": "blog.tarikkochan.top",
         "albumTitle": "幻想界域伝説",
         "albumSubtitle": "Fairy Fantasy from Tarikko Chan the Messenger",
-        "number": "2"
+        "number": "5"
     },
     {
         "title": "絵空随筆神域",
@@ -21,7 +21,7 @@
         "domain": "blog-old.tarikkochan.top",
         "albumTitle": "幻想界域伝説",
         "albumSubtitle": "Fairy Fantasy from Tarikko Chan the Messenger",
-        "number": "3"
+        "number": "1"
     },
     {
         "title": "秘封共享庫",
@@ -29,7 +29,7 @@
         "domain": "commons.tarikkochan.top",
         "albumTitle": "幻想界域伝説",
         "albumSubtitle": "Fairy Fantasy from Tarikko Chan the Messenger",
-        "number": "4"
+        "number": "2"
     },
     {
         "title": "乘西洋風の海跨大橋",
@@ -37,7 +37,7 @@
         "domain": "node.tarikkochan.top",
         "albumTitle": "幻想界域伝説",
         "albumSubtitle": "Fairy Fantasy from Tarikko Chan the Messenger",
-        "number": "5"
+        "number": "6"
     },
     {
         "title": "地下創世記",
@@ -45,6 +45,30 @@
         "domain": "play.tarikkochan.top",
         "albumTitle": "幻想界域伝説",
         "albumSubtitle": "Fairy Fantasy from Tarikko Chan the Messenger",
-        "number": "6"
+        "number": "4"
+    },
+    {
+        "title": "笛客楽団の歴史",
+        "subtitle": "History of the Dick",
+        "domain": "sdick-icu.tarikkochan.top",
+        "albumTitle": "幻想界域伝説",
+        "albumSubtitle": "Fairy Fantasy from Tarikko Chan the Messenger",
+        "number": "8"
+    },
+    {
+        "title": "諫太宗十思疎",
+        "subtitle": "Ten Thoughts on Emperor Taizong's Advice",
+        "domain": "ssh.tarikkochan.top",
+        "albumTitle": "幻想界域伝説",
+        "albumSubtitle": "Fairy Fantasy from Tarikko Chan the Messenger",
+        "number": "7"
+    },
+    {
+        "title": "不思議な天石の扉",
+        "subtitle": "Incredible Heavenly Stone Gate",
+        "domain": "vnc.tarikkochan.top",
+        "albumTitle": "幻想界域伝説",
+        "albumSubtitle": "Fairy Fantasy from Tarikko Chan the Messenger",
+        "number": "9"
     }
 ]
