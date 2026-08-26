@@ -25,7 +25,7 @@ body {
 
 .container {
     width: 120%;
-    max-width: 900px;
+    max-width: 980px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ body {
 
 .domain-name {
     font-weight: bolder;
-    font-size: 1.25rem;
+    font-size: 1.12rem;
     text-shadow: 0 0 10px rgba(200, 160, 255, 0.7), 
                 0 0 20px rgba(180, 140, 255, 0.5),
                 0 0 30px rgba(160, 120, 255, 0.3);
@@ -135,17 +135,18 @@ body {
 
 .domain-subname {
     font-weight: normal;
-    font-size: 1.25rem;
+    font-size: 1.16rem;
 }
 
 .domain-url {
     color: rgba(127, 108, 156, 0.9);
     font-weight: lighter;
+    font-size: 1.16rem;
 }
 
 .domain-album-index {
     color: #b8a2d6;
-    font-size: 0.85rem;
+    font-size: 0.92rem;
     margin-top: 5px;
 }
 
