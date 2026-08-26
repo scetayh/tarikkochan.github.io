@@ -57,7 +57,7 @@ async function renderDomainList() {
             const albumIndex = document.createElement('div');
             albumIndex.className = 'domain-album-index';
             albumIndex.textContent = `
-                『${item.album || '幻想界域巡錄　～ Compendium of Tarikko\'s Realms'}』 ${indexFullWidth}．
+                『${item.album || '幻想界域伝說　～ Gateway to the Wandering Tales.'}』 ${indexFullWidth}．
             `;
 
             li.append(link, albumIndex);
