@@ -121,8 +121,13 @@ body {
     font-size: 1.1rem;
 }
 
+.domain-index {
+    font-weight: normal;
+}
+
 .domain-name {
     font-weight: bolder;
+    font-size: 1.25rem;
     text-shadow: 0 0 10px rgba(200, 160, 255, 0.7), 
                 0 0 20px rgba(180, 140, 255, 0.5),
                 0 0 30px rgba(160, 120, 255, 0.3);
@@ -130,6 +135,7 @@ body {
 
 .domain-subname {
     font-weight: normal;
+    font-size: 1.25rem;
 }
 
 .domain-url {
@@ -137,9 +143,9 @@ body {
     font-weight: lighter;
 }
 
-.domain-desc {
+.domain-album-index {
     color: #b8a2d6;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     margin-top: 5px;
 }
 

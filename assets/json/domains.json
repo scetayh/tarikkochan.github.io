@@ -1,82 +1,146 @@
 [
     {
-        "title": "幻想界域伝説",
-        "subtitle": "Tarikkochan's Second Level Domain Index",
-        "domain": "tarikkochan.top",
-        "albumTitle": "界域巡録",
-        "albumSubtitle": "Fairy Fantasy from Tarikkochan the Messenger",
-        "number": "3"
-    },
-    {
-        "title": "赜月境界奇譚",
-        "subtitle": "Esoteric Chronicles of the Lunar Frontier",
-        "domain": "blog.tarikkochan.top",
-        "albumTitle": "界域巡録",
-        "albumSubtitle": "Fairy Fantasy from Tarikkochan the Messenger",
-        "number": "5"
-    },
-    {
-        "title": "絵空随筆神域",
-        "subtitle": "Esora Somesaki Blog Collection",
+        "title": "繪空舊夢殘帖·靜",
+        "subtitle": "Archive of Bygone Fantasies: Static",
         "domain": "blog-old.tarikkochan.top",
-        "albumTitle": "界域巡録",
-        "albumSubtitle": "Fairy Fantasy from Tarikkochan the Messenger",
-        "number": "1"
+        "desc": "2024年2月14日21:48:49及之前"
     },
     {
-        "title": "秘封共享庫",
-        "subtitle": "Selfish Pseudo Repository of Commons",
+        "title": "隙間廻廊道",
+        "subtitle": "Chronicle of Gap Corridor",
+        "domain": "www.tarikkochan.top",
+        "desc": "2024年8月25日及之前"
+    },
+    {
+        "title": "秘封異典庫",
+        "subtitle": "Pseudo Sealing Repository",
         "domain": "commons.tarikkochan.top",
-        "albumTitle": "界域巡録",
-        "albumSubtitle": "Fairy Fantasy from Tarikkochan the Messenger",
-        "number": "2"
+        "desc": "2024年8月25日及之前"
     },
     {
-        "title": "兆域音樂館",
-        "subtitle": "Terminal Music Archive",
-        "domain": "music.tarikkochan.top",
-        "albumTitle": "界域巡録",
-        "albumSubtitle": "Fairy Fantasy from Tarikkochan the Messenger",
-        "number": "10"
+        "title": "幻想界域巡錄",
+        "subtitle": "Compendium of Tarikko's Realms",
+        "domain": "tarikkochan.top",
+        "desc": "2024年8月25日及之前"
     },
     {
-        "title": "乘西洋風の海跨大橋",
-        "subtitle": "Transoceanic Rainbow within the Eastern Breeze",
-        "domain": "node.tarikkochan.top",
-        "albumTitle": "界域巡録",
-        "albumSubtitle": "Fairy Fantasy from Tarikkochan the Messenger",
-        "number": "6"
+        "title": "鱗鯉昇淵亭",
+        "subtitle": "Pavilion of Phantom Scales upon Water-Ruins",
+        "domain": "liziyu0714.tarikkochan.top",
+        "desc": "2024年8月25日及之前"
     },
     {
         "title": "地下創世記",
-        "subtitle": "Ionic Fish's Mine & Craft Carnival Server",
+        "subtitle": "Ionic Fish's Carnival of Craft",
         "domain": "play.tarikkochan.top",
-        "albumTitle": "界域巡録",
-        "albumSubtitle": "Fairy Fantasy from Tarikkochan the Messenger",
-        "number": "4"
+        "desc": "2024年8月25日及之前"
     },
     {
-        "title": "笛客楽団の歴史",
-        "subtitle": "History of the Dick",
-        "domain": "sdick-icu.tarikkochan.top",
-        "albumTitle": "界域巡録",
-        "albumSubtitle": "Fairy Fantasy from Tarikkochan the Messenger",
-        "number": "8"
+        "title": "狴犴赤硝樓",
+        "subtitle": "Chamber of the Guardian Beast and Scarlet Blaze-Salt",
+        "domain": "dollopium.tarikkochan.top",
+        "desc": "2024年9月21日及之前"
     },
     {
-        "title": "諫太宗十思疎",
+        "title": "雲隅雜叢報·舊",
+        "subtitle": "Miscellaneous Gazette of Cloud-Corner: Legacy",
+        "domain": "dickzhoubao.tarikkochan.top",
+        "desc": "2024年11月末或12月初"
+    },
+    {
+        "title": "雲隅雜叢報·新",
+        "subtitle": "Miscellaneous Gazette of Cloud-Corner: Neon",
+        "domain": "dickzhouboom.tarikkochan.top",
+        "desc": "2024年11月末或12月初"
+    },
+    {
+        "title": "風管銀金卷",
+        "subtitle": "Melodic Tome of Gale Pipes and Gilded-Silver",
+        "domain": "sdick.tarikkochan.top",
+        "desc": "2025年上半年"
+    },
+    {
+        "title": "鏡映幻夢殿·虛",
+        "subtitle": "Mapped Reflection Treasury: Imaginary",
+        "domain": "mirrors.tarikkochan.top",
+        "desc": "2025年上半年"
+    },
+    {
+        "title": "鏡映幻夢殿·實",
+        "subtitle": "Mapped Reflection Treasury: Real",
+        "domain": "mirrors.sdick.tarikkochan.top",
+        "desc": "2025年上半年"
+    },
+    {
+        "title": "引津渡虹譜·前編",
+        "subtitle": "Score of the Ferrying Haven over Iris-Bridge: Prologue",
+        "domain": "sdickd.tarikkochan.top",
+        "desc": "2025年7月末"
+    },
+    {
+        "title": "引津渡虹譜·中編",
+        "subtitle": "Score of the Ferrying Haven over Iris-Bridge: Midlogue",
+        "domain": "sdickd-1.tarikkochan.top",
+        "desc": "2025年7月末"
+    },
+    {
+        "title": "引津渡虹譜·後編",
+        "subtitle": "Score of the Ferrying Haven over Iris-Bridge: Epilogue",
+        "domain": "sdickd-2.tarikkochan.top",
+        "desc": "2025年7月末"
+    },
+    {
+        "title": "諫太宗十思疏",
         "subtitle": "Ten Thoughts on Emperor Taizong's Advice",
         "domain": "ssh.tarikkochan.top",
-        "albumTitle": "界域巡録",
-        "albumSubtitle": "Fairy Fantasy from Tarikkochan the Messenger",
-        "number": "7"
+        "desc": "2025年7月末"
     },
     {
         "title": "不思議な天石の扉",
         "subtitle": "Incredible Heavenly Stone Gate",
         "domain": "vnc.tarikkochan.top",
-        "albumTitle": "界域巡録",
-        "albumSubtitle": "Fairy Fantasy from Tarikkochan the Messenger",
-        "number": "9"
+        "desc": "2025年7月末至10月19日"
+    },
+    {
+        "title": "表裹散步道",
+        "subtitle": "Lane of Surface-Reverse Wanderings",
+        "domain": "index.tarikkochan.top",
+        "desc": "2025年8月23日及之前；2025年10月1日撤销"
+    },
+    {
+        "title": "繪空舊夢殘帖·動",
+        "subtitle": "Archive of Bygone Fantasies: Dynamic",
+        "domain": "blogd.tarikkochan.top",
+        "desc": "2025年8月31日及之前"
+    },
+    {
+        "title": "赜月境界奇譚",
+        "subtitle": "Esoteric Chronicles of the Lunar Frontier",
+        "domain": "blog.tarikkochan.top",
+        "desc": "2025年10月5日18:05"
+    },
+    {
+        "title": "乘西洋風の海跨大橋",
+        "subtitle": "Transoceanic Rainbow within the Eastern Breeze",
+        "domain": "node.tarikkochan.top",
+        "desc": "2025年10月12日及之前"
+    },
+    {
+        "title": "笛客樂団の歴史",
+        "subtitle": "History of the Dick",
+        "domain": "sdick-icu.tarikkochan.top",
+        "desc": "2025年10月19日及之前"
+    },
+    {
+        "title": "冥宵鳴樂墟",
+        "subtitle": "Nocturnal Phantom of the Mournful Valley",
+        "domain": "music.tarikkochan.top",
+        "desc": "2025年12月14日及之前"
+    },
+    {
+        "title": "囀言墟話帖",
+        "subtitle": "Tales Spoken in the Gathering Ruins",
+        "domain": "chat.tarikkochan.top",
+        "desc": "2026年8月25日"
     }
 ]

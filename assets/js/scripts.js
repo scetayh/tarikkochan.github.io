@@ -1,74 +1,71 @@
-// 渲染域名列表
 async function renderDomainList() {
     try {
-        const response = await fetch('/assets/json/domains.json');
+        const response = await fetch('./assets/json/domains.json');
+        if (!response.ok) throw new Error('Network response was not ok');
         const domainData = await response.json();
 
         const domainList = document.getElementById('domainList');
-        domainList.innerHTML = ''; // 清空加载提示
+        if (!domainList) return;
+        domainList.innerHTML = '';
 
+        let tarikkoIndex = 1;
+        let index;
         domainData.forEach(item => {
             const li = document.createElement('li');
             li.className = 'domain-item';
 
-            item.numberFullWidth = item.number.replace(/[0-9]/g, char =>
+            index = Object.prototype.hasOwnProperty.call(item, 'album') ? item.index : tarikkoIndex;
+
+            const indexFullWidth = String(index).replace(/[0-9]/g, char =>
                 String.fromCharCode(char.charCodeAt(0) + 0xFEE0)
             );
 
-            li.innerHTML = `
-                <a href="https://${item.domain}" class="domain-link" target="_blank">
-                    <span class="domain-name">${item.title}<span class="domain-subname">　〜 ${item.subtitle}</span></span>
-                    <span class="domain-url">${item.domain}</span>
-                </a>
-                <div class="domain-desc">『${item.albumTitle}　〜 ${item.albumSubtitle}』 ${item.numberFullWidth}．</div>
+            const link = document.createElement('a');
+            link.href = /^https?:\/\//i.test(item.domain) ? item.domain : `https://${item.domain}`;
+            link.className = 'domain-link';
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+
+            const nameSpan = document.createElement('span');
+            nameSpan.className = 'domain-name';
+
+            const titleText = document.createTextNode(
+                item.title || item.domain.toUpperCase()
+            );
+            const subtitleSpan = document.createElement('span');
+            subtitleSpan.className = 'domain-subname';
+            subtitleSpan.textContent = item.title && item.subtitle ? `　〜 ${item.subtitle}` : '';
+
+            nameSpan.append(titleText, subtitleSpan);
+
+            const urlSpan = document.createElement('span');
+            urlSpan.className = 'domain-url';
+            urlSpan.textContent = item.domain || '';
+
+            link.append(nameSpan, urlSpan);
+
+            const albumIndex = document.createElement('div');
+            albumIndex.className = 'domain-album-index';
+            albumIndex.textContent = `
+                『${item.album || '幻想界域巡錄　～ Compendium of Tarikko\'s Realms'}』 ${indexFullWidth}．
             `;
 
+            li.append(link, albumIndex);
+
             domainList.appendChild(li);
+
+            if (!Object.prototype.hasOwnProperty.call(item, 'album')) {
+                tarikkoIndex++;
+            }
+
         });
     } catch (error) {
-        document.getElementById('domainList').innerHTML =
-            '<li class="loading">加载域名列表失败，请稍后重试</li>';
+        const domainList = document.getElementById('domainList');
+        if (domainList) {
+            domainList.innerHTML = '<li class="loading">加载域名列表失败</li>';
+        }
         console.error('Error loading domain data:', error);
     }
 }
 
-// 添加樱花装饰元素
-function createCherryBlossoms() {
-    const body = document.querySelector('body');
-    const blossomCount = Math.min(15, Math.floor(window.innerWidth / 50));
-
-    for (let i = 0; i < blossomCount; i++) {
-        const blossom = document.createElement('div');
-        blossom.classList.add('cherry-blossom');
-
-        // 随机位置
-        const left = Math.random() * 100;
-        const top = Math.random() * 100;
-
-        // 随机大小
-        const size = 5 + Math.random() * 10;
-
-        // 随机透明度
-        const opacity = 0.3 + Math.random() * 0.4;
-
-        blossom.style.left = `${left}vw`;
-        blossom.style.top = `${top}vh`;
-        blossom.style.width = `${size}px`;
-        blossom.style.height = `${size}px`;
-        blossom.style.opacity = opacity;
-
-        body.appendChild(blossom);
-    }
-}
-
-// 页面加载时执行
-window.addEventListener('load', function () {
-    renderDomainList();
-    createCherryBlossoms();
-});
-
-// 调整窗口大小时重新布置樱花
-window.addEventListener('resize', function () {
-    document.querySelectorAll('.cherry-blossom').forEach(el => el.remove());
-    createCherryBlossoms();
-});
+renderDomainList();
