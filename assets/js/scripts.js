@@ -78,4 +78,49 @@ async function renderDomainList() {
     }
 }
 
+async function getLastCommitTime(owner, repo) {
+    const url = `https://api.github.com/repos/${owner}/${repo}/commits`;
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const commits = await response.json();
+        if (commits.length === 0) {
+            return null;
+        }
+        return commits[0].commit.author.date;
+    } catch (error) {
+        console.error('Error getting commit time:', error);
+        return null;
+    }
+}
+
+function formatDate(date) {
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const seconds = String(date.getSeconds()).padStart(2, '0');
+    return `${year} 年 ${month} 月 ${day} 日 ${hours}:${minutes}:${seconds}`;
+}
+
+async function updateLastCommitTime() {
+    const paragraph = document.getElementById('last-commit');
+    try {
+        const isoDate = await getLastCommitTime('scetayh', 'tarikkochan.github.io');
+        if (!isoDate) {
+            paragraph.textContent = '本页面最后更新于未知时间';
+            return;
+        }
+        const dateObj = new Date(isoDate);
+        const formatted = formatDate(dateObj);
+        paragraph.textContent = `本页面最后更新于 ${formatted}`;
+    } catch (error) {
+        paragraph.textContent = '本页面最后更新于未知时间';
+    }
+}
+
+updateLastCommitTime();
 renderDomainList();
