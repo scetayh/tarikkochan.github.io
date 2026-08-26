@@ -10,7 +10,7 @@
     },
     {
         "title": "消えし歲書",
-        "subtitle": "Pavilion of Abandoned Fantasy Manuscripts",
+        "subtitle": "Slumbers of Abandoned Fantasy Manuscripts",
         "domain": "blog.tarikko-scetayhchan.top",
         "album": "幼霧と何の過ぎし裡世界",
         "index": "1",
@@ -52,7 +52,7 @@
         "desc": ""
     },
     {
-        "title": "繪空舊夢殘帖·靜",
+        "title": "繪空舊夢殘簿·靜",
         "subtitle": "",
         "domain": "blog-old.tarikkochan.top",
         "desc": "2024年2月14日21:48:49及之前"
@@ -173,7 +173,7 @@
         "desc": "2025年8月23日及之前；2025年10月1日撤销"
     },
     {
-        "title": "繪空舊夢殘帖·動",
+        "title": "繪空舊夢殘簿·動",
         "subtitle": "",
         "domain": "blogd.tarikkochan.top",
         "enabled": false,
@@ -206,7 +206,34 @@
         "desc": "2025年12月14日及之前"
     },
     {
-        "title": "囀言墟話帖",
+        "title": "窮厄部落閣",
+        "subtitle": "Chieftain-Hall of the Afflicted Clan",
+        "domain": "ayaria.prescott.asia",
+        "author": "Ayaria (四川アヤリア幻樂団)",
+        "album": "遐旁交響帖　～ Symphony-scroll of Distant Borderlands.",
+        "index": "1",
+        "desc": "2026年8月18日"
+    },
+    {
+        "title": "兇壤造世壇",
+        "subtitle": "World-shaping Altar of Subterranean Paradise",
+        "domain": "mc.ayaria.prescott.asia",
+        "author": "Ayaria (四川アヤリア幻樂団)",
+        "album": "遐旁交響帖　～ Symphony-scroll of Distant Borderlands.",
+        "index": "2",
+        "desc": ""
+    },
+    {
+        "title": "極坂音導軒",
+        "subtitle": "Veranda of Eastern Wind",
+        "domain": "sdick.asia",
+        "author": "Ayaria (四川アヤリア幻樂団)",
+        "album": "遐旁交響帖　～ Symphony-scroll of Distant Borderlands.",
+        "index": "3",
+        "desc": ""
+    },
+    {
+        "title": "囀言墟話書",
         "subtitle": "Tales Spoken in the Gathering Ruins",
         "domain": "chat.tarikkochan.top",
         "desc": "2026年8月25日"
