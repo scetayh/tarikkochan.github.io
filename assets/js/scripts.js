@@ -14,6 +14,11 @@ async function renderDomainList() {
             const li = document.createElement('li');
             li.className = 'domain-item';
 
+            const isEnabled = item.enabled !== false;
+            if (!isEnabled) {
+                li.classList.add('domain-item-disabled');
+            }
+
             index = Object.prototype.hasOwnProperty.call(item, 'album') ? item.index : tarikkoIndex;
 
             const indexFullWidth = String(index).replace(/[0-9]/g, char =>
@@ -21,10 +26,15 @@ async function renderDomainList() {
             );
 
             const link = document.createElement('a');
-            link.href = /^https?:\/\//i.test(item.domain) ? item.domain : `https://${item.domain}`;
             link.className = 'domain-link';
-            link.target = '_blank';
-            link.rel = 'noopener noreferrer';
+            if (isEnabled) {
+                link.href = /^https?:\/\//i.test(item.domain) ? item.domain : `https://${item.domain}`;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+            } else {
+                link.setAttribute('aria-disabled', 'true');
+                link.tabIndex = -1;
+            }
 
             const nameSpan = document.createElement('span');
             nameSpan.className = 'domain-name';

@@ -27,66 +27,77 @@
         "title": "鱗鯉昇淵亭",
         "subtitle": "Pavilion of Phantom Scales upon Water-Ruins",
         "domain": "liziyu0714.tarikkochan.top",
+        "enabled": false,
         "desc": "2024年8月25日及之前"
     },
     {
         "title": "地下創世記",
         "subtitle": "Ionic Fish's Carnival of Craft",
         "domain": "play.tarikkochan.top",
+        "enabled": false,
         "desc": "2024年8月25日及之前"
     },
     {
         "title": "狴犴赤硝樓",
         "subtitle": "Chamber of the Guardian Beast and Scarlet Blaze-Salt",
         "domain": "dollopium.tarikkochan.top",
+        "enabled": false,
         "desc": "2024年9月21日及之前"
     },
     {
         "title": "雲隅雜叢報·舊",
         "subtitle": "Miscellaneous Gazette of Cloud-Corner: Legacy",
         "domain": "dickzhoubao.tarikkochan.top",
+        "enabled": false,
         "desc": "2024年11月末或12月初"
     },
     {
         "title": "雲隅雜叢報·新",
         "subtitle": "Miscellaneous Gazette of Cloud-Corner: Neon",
         "domain": "dickzhouboom.tarikkochan.top",
+        "enabled": false,
         "desc": "2024年11月末或12月初"
     },
     {
         "title": "風管銀金卷",
         "subtitle": "Melodic Tome of Gale Pipes and Gilded-Silver",
         "domain": "sdick.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年上半年"
     },
     {
         "title": "鏡映幻夢殿·虛",
         "subtitle": "Mapped Reflection Treasury: Imaginary",
         "domain": "mirrors.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年上半年"
     },
     {
         "title": "鏡映幻夢殿·實",
         "subtitle": "Mapped Reflection Treasury: Real",
         "domain": "mirrors.sdick.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年上半年"
     },
     {
         "title": "引津渡虹譜·前編",
         "subtitle": "Score of the Ferrying Haven over Iris-Bridge: Prologue",
         "domain": "sdickd.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年7月末"
     },
     {
         "title": "引津渡虹譜·中編",
         "subtitle": "Score of the Ferrying Haven over Iris-Bridge: Midlogue",
         "domain": "sdickd-1.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年7月末"
     },
     {
         "title": "引津渡虹譜·後編",
         "subtitle": "Score of the Ferrying Haven over Iris-Bridge: Epilogue",
         "domain": "sdickd-2.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年7月末"
     },
     {
@@ -99,18 +110,21 @@
         "title": "不思議な天石の扉",
         "subtitle": "Incredible Heavenly Stone Gate",
         "domain": "vnc.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年7月末至10月19日"
     },
     {
         "title": "表裹散步道",
         "subtitle": "Lane of Surface-Reverse Wanderings",
         "domain": "index.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年8月23日及之前；2025年10月1日撤销"
     },
     {
         "title": "繪空舊夢殘帖·動",
         "subtitle": "Archive of Bygone Fantasies: Dynamic",
         "domain": "blogd.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年8月31日及之前"
     },
     {
@@ -123,12 +137,14 @@
         "title": "乘西洋風の海跨大橋",
         "subtitle": "Transoceanic Rainbow within the Eastern Breeze",
         "domain": "node.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年10月12日及之前"
     },
     {
         "title": "笛客樂団の歴史",
         "subtitle": "History of the Dick",
         "domain": "sdick-icu.tarikkochan.top",
+        "enabled": false,
         "desc": "2025年10月19日及之前"
     },
     {

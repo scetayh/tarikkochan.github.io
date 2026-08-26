@@ -112,6 +112,25 @@ body {
     transform: translateX(5px);
 }
 
+.domain-item-disabled {
+    filter: grayscale(1);
+    opacity: 0.55;
+}
+
+.domain-item-disabled:hover {
+    background: transparent;
+    transform: none;
+}
+
+.domain-item-disabled .domain-link {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.domain-item-disabled .domain-name {
+    text-shadow: none;
+}
+
 .domain-link {
     display: flex;
     justify-content: space-between;
