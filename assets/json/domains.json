@@ -169,8 +169,7 @@
         "title": "表裹散步道",
         "subtitle": "",
         "domain": "index.tarikkochan.top",
-        "enabled": false,
-        "desc": "2025年8月23日及之前；2025年10月1日撤销"
+        "desc": "2025年8月23日及之前；2025年10月1日撤销；2026年8月30日重定向到@"
     },
     {
         "title": "繪空舊夢殘簿·動",
@@ -237,5 +236,12 @@
         "subtitle": "Tales Spoken in the Gathering Ruins",
         "domain": "chat.tarikkochan.top",
         "desc": "2026年8月25日"
+    },
+    {
+        "title": "閃長巖信門",
+        "subtitle": "Diorite Gate of Divine Dispatch",
+        "domain": "rdp.tarikkochan.top",
+        "enabled": false,
+        "desc": "2026年8月30日部署失败"
     }
 ]
