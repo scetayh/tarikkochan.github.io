@@ -5,6 +5,8 @@
         "domain": "508228021.qzone.qq.com",
         "album": "夏光遊行録　～  Estival Saunters with Wanderlust",
         "index": "1",
+        "author": "",
+        "enabled": true,
         "desc": "2015年7月6日20:05注册QQ"
     },
     {
@@ -13,6 +15,7 @@
         "domain": "heartmslxy.xyz",
         "album": "星の殘る遺跡",
         "index": "1",
+        "author": "",
         "enabled": false,
         "desc": "2020年3月14日及之前"
     },
@@ -22,14 +25,17 @@
         "domain": "blog.tarikko-scetayhchan.top",
         "album": "幼霧と何の過ぎし裡世界",
         "index": "1",
+        "author": "",
         "enabled": false,
         "desc": ""
     },
     {
         "title": "過ぎし裡世界",
+        "subtitle": "",
         "domain": "www.tarikko-scetayhchan.top",
         "album": "幼霧と何の過ぎし裡世界",
         "index": "2",
+        "author": "",
         "enabled": false,
         "desc": ""
     },
@@ -39,6 +45,7 @@
         "domain": "pictures.tarikko-scetayhchan.top",
         "album": "幼霧と何の過ぎし裡世界",
         "index": "3",
+        "author": "",
         "enabled": false,
         "desc": ""
     },
@@ -48,14 +55,17 @@
         "domain": "images.tarikko-scetayhchan.top",
         "album": "幼霧と何の過ぎし裡世界",
         "index": "4",
+        "author": "",
         "enabled": false,
         "desc": ""
     },
     {
         "title": "眠れし秘の蔵",
+        "subtitle": "",
         "domain": "commons.tarikko-scetayhchan.top",
         "album": "幼霧と何の過ぎし裡世界",
         "index": "5",
+        "author": "",
         "enabled": false,
         "desc": ""
     },
@@ -63,30 +73,49 @@
         "title": "繪空舊夢殘簿·靜",
         "subtitle": "",
         "domain": "blog-old.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
+        "enabled": true,
         "desc": "2024年2月14日21:48:49及之前"
     },
     {
         "title": "隙間廻廊道",
         "subtitle": "Chronicle of Gap Corridor",
         "domain": "www.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
+        "enabled": true,
         "desc": "2024年8月25日及之前"
     },
     {
         "title": "秘封異典庫",
         "subtitle": "",
         "domain": "commons.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
+        "enabled": true,
         "desc": "2024年8月25日及之前"
     },
     {
         "title": "幻想界域巡錄",
         "subtitle": "Compendium of Tarikko's Realms",
         "domain": "tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
+        "enabled": true,
         "desc": "2024年8月25日及之前"
     },
     {
         "title": "鱗鯉昇淵亭",
         "subtitle": "Pavilion of Scales upon Water-Ruins",
         "domain": "liziyu0714.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2024年8月25日及之前"
     },
@@ -94,6 +123,9 @@
         "title": "地下創世記",
         "subtitle": "Ionic Fish's Carnival of Craft",
         "domain": "play.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2024年8月25日及之前"
     },
@@ -101,6 +133,9 @@
         "title": "狴犴赤硝樓",
         "subtitle": "Chamber of the Guardian Beast and Scarlet Blaze-Salt",
         "domain": "dollopium.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2024年9月21日及之前"
     },
@@ -108,6 +143,9 @@
         "title": "雲隅雜叢報·舊",
         "subtitle": "",
         "domain": "dickzhoubao.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2024年11月末或12月初"
     },
@@ -115,6 +153,9 @@
         "title": "雲隅雜叢報·新",
         "subtitle": "",
         "domain": "dickzhouboom.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2024年11月末或12月初"
     },
@@ -122,6 +163,9 @@
         "title": "風管銀金卷",
         "subtitle": "Melodic Tome of Gale Pipes and Gilded-Silver",
         "domain": "sdick.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2025年上半年"
     },
@@ -129,6 +173,9 @@
         "title": "鏡映幻夢殿·虛",
         "subtitle": "",
         "domain": "mirrors.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2025年上半年"
     },
@@ -136,6 +183,9 @@
         "title": "鏡映幻夢殿·實",
         "subtitle": "",
         "domain": "mirrors.sdick.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2025年上半年"
     },
@@ -143,6 +193,9 @@
         "title": "引津渡虹譜·前編",
         "subtitle": "Score of the Ferrying Haven over Iris-Bridge: Prologue",
         "domain": "sdickd.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2025年7月末"
     },
@@ -150,6 +203,9 @@
         "title": "引津渡虹譜·中編",
         "subtitle": "Score of the Ferrying Haven over Iris-Bridge: Midlogue",
         "domain": "sdickd-1.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2025年7月末"
     },
@@ -157,6 +213,9 @@
         "title": "引津渡虹譜·後編",
         "subtitle": "Score of the Ferrying Haven over Iris-Bridge: Epilogue",
         "domain": "sdickd-2.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2025年7月末"
     },
@@ -164,12 +223,19 @@
         "title": "諫太宗十思疏",
         "subtitle": "",
         "domain": "ssh.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
+        "enabled": true,
         "desc": "2025年7月末"
     },
     {
         "title": "不思議な天石の扉",
         "subtitle": "Incredible Heavenly Stone Gate",
         "domain": "vnc.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2025年7月末至10月19日"
     },
@@ -177,12 +243,19 @@
         "title": "表裹散步道",
         "subtitle": "",
         "domain": "index.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
+        "enabled": true,
         "desc": "2025年8月23日及之前；2025年10月1日撤销；2026年8月30日重定向到@"
     },
     {
         "title": "繪空舊夢殘簿·動",
         "subtitle": "",
         "domain": "blogd.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2025年8月31日及之前"
     },
@@ -190,12 +263,19 @@
         "title": "赜月境界奇譚",
         "subtitle": "Esoteric Chronicles of the Lunar Frontier",
         "domain": "blog.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
+        "enabled": true,
         "desc": "2025年10月5日18:05"
     },
     {
         "title": "乘西洋風の海跨大橋",
         "subtitle": "Transoceanic Rainbow within the Eastern Breeze",
         "domain": "node.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2025年10月12日及之前"
     },
@@ -203,6 +283,9 @@
         "title": "笛客樂団の歴史",
         "subtitle": "History of the Dick",
         "domain": "sdick-icu.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2025年10月19日及之前"
     },
@@ -212,51 +295,67 @@
         "domain": "3649027731.qzone.qq.com",
         "album": "夏光遊行録　～  Estival Saunters with Wanderlust",
         "index": "2",
+        "author": "",
+        "enabled": true,
         "desc": "2025年11月20日20:39之前注册时计的QQ"
     },
     {
         "title": "冥宵鳴樂墟",
         "subtitle": "Nocturnal Phantom of the Mournful Valley",
         "domain": "music.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
+        "enabled": true,
         "desc": "2025年12月14日及之前"
     },
     {
         "title": "窮厄部落閣",
         "subtitle": "Chieftain-Hall of the Afflicted Clan",
         "domain": "ayaria.prescott.asia",
-        "author": "Ayaria (四川アヤリア幻樂団)",
         "album": "遐旁交響帖　～ Symphony-scroll of Distant Borderlands.",
         "index": "1",
+        "author": "Ayaria (四川アヤリア幻樂団)",
+        "enabled": true,
         "desc": "2026年8月18日"
     },
     {
         "title": "兇壤造世壇",
         "subtitle": "World-shaping Altar of Subterranean Paradise",
         "domain": "mc.ayaria.prescott.asia",
-        "author": "Ayaria (四川アヤリア幻樂団)",
         "album": "遐旁交響帖　～ Symphony-scroll of Distant Borderlands.",
         "index": "2",
+        "author": "Ayaria (四川アヤリア幻樂団)",
+        "enabled": true,
         "desc": ""
     },
     {
         "title": "極坂音導軒",
         "subtitle": "Veranda of Eastern Wind",
         "domain": "sdick.asia",
-        "author": "Ayaria (四川アヤリア幻樂団)",
         "album": "遐旁交響帖　～ Symphony-scroll of Distant Borderlands.",
         "index": "3",
+        "author": "Ayaria (四川アヤリア幻樂団)",
+        "enabled": true,
         "desc": ""
     },
     {
         "title": "囀言墟話書",
         "subtitle": "Tales Spoken in the Gathering Ruins",
         "domain": "chat.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
+        "enabled": true,
         "desc": "2026年8月25日"
     },
     {
         "title": "閃長巖信門",
         "subtitle": "Diorite Gate of Divine Dispatch",
         "domain": "rdp.tarikkochan.top",
+        "album": "",
+        "index": "",
+        "author": "",
         "enabled": false,
         "desc": "2026年8月30日部署失败"
     }

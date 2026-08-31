@@ -12,22 +12,51 @@
 <body>
     <div class="container">
         <header class="main-title">
-            <h1>幻想界域巡錄</h1>
+            <div class="title">幻想界域巡錄</div>
             <div class="subtitle">～ Compendium of Tarikko's Realms</div>
         </header>
 
-        <main class="navigation-container">
-            <ul class="domain-list" id="domainList">
-                <li class="loading">少女祈祷中…</li>
-            </ul>
-        </main>
+        <main class="main-layout">
+            <div class="domain-toolbar">
+                <div class="toolbar-group">
+                    <span class="toolbar-label">排序</span>
+                    <button class="toolbar-button" type="button" data-sort-key="album">专辑</button>
+                    <button class="toolbar-button is-active" type="button" data-sort-key="original">原序</button>
+                    <button class="toolbar-button" type="button" data-sort-key="title">主标题</button>
+                    <button class="toolbar-button" type="button" data-sort-key="subtitle">副标题</button>
+                    <button class="toolbar-button" type="button" data-sort-key="domain">音源</button>
+                    <button class="toolbar-button" type="button" data-sort-key="enabled">无效置底</button>
+                </div>
+                <br />
+                <div class="toolbar-group">
+                    <span class="toolbar-label">顺序</span>
+                    <button class="toolbar-button is-active" type="button" data-direction="asc">升序</button>
+                    <button class="toolbar-button" type="button" data-direction="desc">降序</button>
+                </div>
+                <br />
+                <div class="toolbar-group">
+                    <span class="toolbar-label">显示</span>
+                    <button class="toolbar-button is-active" type="button" data-filter="all">全部</button>
+                    <button class="toolbar-button" type="button" data-filter="enabled">有效</button>
+                    <button class="toolbar-button" type="button" data-filter="disabled">无效</button>
+                </div>
+            </div>
 
-        <footer class="footer">
-            <p><b>幻想界域巡錄 ～ 此間一切非真有之物</b></p>
-            <p><b>tarikkochan.top © 2025 - 2026 by Ryū Shiō<small> (地殻ムーブメント)</small></b></p>
-            <br/>
-            <p id="last-commit">本页面最后更新于未知时间</p>
-        </footer>
+            <div class="navigation-container">
+                <div class="domain-list-panel" id="domainListPanel">
+                    <ul class="domain-list" id="domainList">
+                        <li class="loading">少女祈祷中…</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p><b>幻想界域巡錄 ～ 此間一切非真有之物</b></p>
+                <p><b>tarikkochan.top © 2025 - 2026 by Ryū Shiō<small> (地殻ムーブメント)</small></b></p>
+                <br/>
+                <p id="last-commit">本页面最后更新于未知时间</p>
+            </div>
+        </main>
     </div>
 
     <script src="assets/js/scripts.js" defer></script>
