@@ -1,0 +1,151 @@
+@media (max-width: 900px) {
+    .domain-link {
+        flex-wrap: wrap;
+    }
+
+    .domain-name,
+    .domain-subname {
+        white-space: nowrap;
+    }
+
+    .domain-url {
+        flex-basis: 100%;
+        margin-left: 0;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+
+    .main-title {
+        margin: 18px 0 12px;
+    }
+
+    .main-title h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .main-layout {
+        margin: 12px 0 0;
+        gap: 12px;
+    }
+
+    .domain-toolbar {
+        padding: 12px 10px;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .toolbar-row {
+        align-items: flex-start;
+    }
+
+    .toolbar-group {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        padding: 7px 8px;
+        border-radius: 12px;
+    }
+
+    .toolbar-label {
+        min-width: 0;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2px;
+    }
+
+    .toolbar-button {
+        flex: 1 1 calc(50% - 8px);
+        min-height: 36px;
+        text-align: center;
+        padding: 8px 10px;
+        font-size: 0.82rem;
+    }
+
+    .navigation-container {
+        padding: 12px 10px;
+        max-width: 100%;
+    }
+
+    .album-group .domain-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .domain-item {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px 8px;
+    }
+
+    .domain-link {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        gap: 0;
+    }
+
+    .domain-name,
+    .domain-subname,
+    .domain-url {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .domain-name,
+    .domain-subname {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
+
+    .domain-url {
+        margin-left: 0;
+        margin-top: 4px;
+        text-align: right;
+        white-space: normal;
+    }
+
+    .domain-item:hover {
+        transform: translateX(3px);
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title h1 {
+        font-size: 1.7rem;
+    }
+
+    .main-title::before,
+    .main-title::after {
+        display: none;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms;
+    }
+}

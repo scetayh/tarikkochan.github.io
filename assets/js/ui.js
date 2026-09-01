@@ -1,96 +1,3 @@
-const domainState = {
-    rawData: [],
-    sortKey: 'original',
-    sortDirection: 'asc',
-    filterMode: 'all'
-};
-
-function normalizeString(value) {
-    return String(value ?? '').trim().toLowerCase();
-}
-
-function getItemEnabled(item) {
-    return item.enabled !== false;
-}
-
-function getItemOriginalIndex(item, index) {
-    return Object.prototype.hasOwnProperty.call(item, 'album') ? Number(item.index) || 0 : index + 1;
-}
-
-function getAlbumValue(item) {
-    return item.album || '';
-}
-
-function getSortDirectionMultiplier(direction) {
-    return direction === 'desc' ? -1 : 1;
-}
-
-function compareValues(a, b, direction) {
-    const lhs = a ?? '';
-    const rhs = b ?? '';
-    if (lhs < rhs) return -1 * getSortDirectionMultiplier(direction);
-    if (lhs > rhs) return 1 * getSortDirectionMultiplier(direction);
-    return 0;
-}
-
-function getAlbumLocalSortValue(item) {
-    if (Object.prototype.hasOwnProperty.call(item, 'album') && item.index !== undefined && item.index !== null && item.index !== '') {
-        return Number(item.index) || 0;
-    }
-    return item.albumLocalOrder ?? (item.originalIndex ?? 0);
-}
-
-function getStableTrackIndex(item) {
-    if (Object.prototype.hasOwnProperty.call(item, 'album') && item.index !== undefined && item.index !== null && item.index !== '') {
-        return Number(item.index) || 0;
-    }
-    return item.albumLocalOrder ?? ((item.originalIndex ?? 0) + 1);
-}
-
-function compareDomainItems(a, b) {
-    const direction = domainState.sortDirection;
-
-    if (domainState.sortKey === 'original') {
-        return compareValues(a.originalIndex, b.originalIndex, direction);
-    }
-
-    if (domainState.sortKey === 'title') {
-        return compareValues(normalizeString(a.title || a.domain), normalizeString(b.title || b.domain), direction);
-    }
-
-    if (domainState.sortKey === 'subtitle') {
-        return compareValues(normalizeString(a.subtitle || ''), normalizeString(b.subtitle || ''), direction);
-    }
-
-    if (domainState.sortKey === 'domain') {
-        return compareValues(normalizeString(a.domain || ''), normalizeString(b.domain || ''), direction);
-    }
-
-    if (domainState.sortKey === 'album') {
-        const albumA = normalizeString(getAlbumValue(a));
-        const albumB = normalizeString(getAlbumValue(b));
-
-        if (albumA !== albumB) {
-            return compareValues(albumA, albumB, direction);
-        }
-
-        return compareValues(getAlbumLocalSortValue(a), getAlbumLocalSortValue(b), direction);
-    }
-
-    if (domainState.sortKey === 'enabled') {
-        const enabledA = getItemEnabled(a);
-        const enabledB = getItemEnabled(b);
-
-        if (enabledA !== enabledB) {
-            return enabledA ? -1 : 1;
-        }
-
-        return compareValues(a.originalIndex, b.originalIndex, direction === 'desc' ? 'desc' : 'asc');
-    }
-
-    return 0;
-}
-
 function updateToolbarState() {
     document.querySelectorAll('[data-sort-key]').forEach(button => {
         const isActive = button.dataset.sortKey === domainState.sortKey;
@@ -118,6 +25,7 @@ function bindToolbarControls() {
                 domainState.sortKey = key;
                 domainState.sortDirection = 'asc';
             }
+            persistState();
             renderDomainList();
         });
     });
@@ -125,6 +33,7 @@ function bindToolbarControls() {
     document.querySelectorAll('[data-direction]').forEach(button => {
         button.addEventListener('click', () => {
             domainState.sortDirection = button.dataset.direction;
+            persistState();
             renderDomainList();
         });
     });
@@ -132,41 +41,10 @@ function bindToolbarControls() {
     document.querySelectorAll('[data-filter]').forEach(button => {
         button.addEventListener('click', () => {
             domainState.filterMode = button.dataset.filter;
+            persistState();
             renderDomainList();
         });
     });
-}
-
-function getFilteredDomainData() {
-    const albumCounters = new Map();
-
-    return domainState.rawData
-        .map((item, index) => {
-            const albumKey = item.album || '幻想界域伝說　～ Gateway to the Wandering Tales.';
-            const albumNeedsExplicitIndex = Object.prototype.hasOwnProperty.call(item, 'album') && item.index !== undefined && item.index !== null && item.index !== '';
-
-            const currentAlbumCount = albumCounters.get(albumKey) ?? 0;
-            const albumLocalOrder = albumNeedsExplicitIndex
-                ? Number(item.index) || 0
-                : currentAlbumCount + 1;
-
-            albumCounters.set(albumKey, Math.max(currentAlbumCount, albumLocalOrder));
-
-            return {
-                ...item,
-                originalIndex: index,
-                albumLocalOrder
-            };
-        })
-        .filter(item => {
-            if (domainState.filterMode === 'enabled') {
-                return getItemEnabled(item);
-            }
-            if (domainState.filterMode === 'disabled') {
-                return !getItemEnabled(item);
-            }
-            return true;
-        });
 }
 
 function createAlbumIndexText(item, index) {
@@ -251,6 +129,7 @@ function renderAlbumGroups(sortedData) {
             domainState.sortDirection
         ));
         const allDisabled = orderedItems.length > 0 && orderedItems.every(item => !getItemEnabled(item));
+        const albumAuthor = orderedItems.find(item => item.author)?.author || '';
 
         const group = document.createElement('div');
         group.className = 'album-group';
@@ -260,7 +139,7 @@ function renderAlbumGroups(sortedData) {
 
         const header = document.createElement('div');
         header.className = 'album-group-header';
-        header.textContent = `『${albumName}』`;
+        header.textContent = albumAuthor ? `${albumAuthor}『${albumName}』` : `『${albumName}』`;
         group.appendChild(header);
 
         const list = document.createElement('ul');
@@ -314,9 +193,6 @@ async function renderDomainList() {
     }
 }
 
-bindToolbarControls();
-renderDomainList();
-
 async function getLastCommitTime(owner, repo) {
     const url = `https://api.github.com/repos/${owner}/${repo}/commits`;
     try {
@@ -335,6 +211,48 @@ async function getLastCommitTime(owner, repo) {
     }
 }
 
+const TAISUI_YEAR_NAME = {
+    2025: '強圉執徐',
+    2026: '柔兆敦牂',
+    2027: '著雍攝提格',
+    2028: '玄黓敦牂',
+    2029: '屠維上章'
+};
+
+const CHINESE_NUMERALS = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+
+function toChineseDay(value) {
+    const n = Number(value);
+    if (Number.isNaN(n) || n < 1 || n > 31) {
+        return String(value ?? '');
+    }
+
+    const tens = Math.floor(n / 10);
+    const units = n % 10;
+
+    const tensText = tens === 0 ? '' : (tens === 1 ? '十' : `${CHINESE_NUMERALS[tens]}十`);
+    const unitsText = units === 0 ? '' : CHINESE_NUMERALS[units];
+    return `${tensText}${unitsText}`;
+}
+
+function getTaisuiYearName(date) {
+    const year = date.getFullYear();
+    return TAISUI_YEAR_NAME[year] || `${year}`;
+}
+
+function getLunarMonthDay(date) {
+    const lunarFormatter = new Intl.DateTimeFormat('zh-CN-u-ca-chinese', {
+        month: 'long',
+        day: 'numeric'
+    });
+
+    const parts = lunarFormatter.formatToParts(date);
+    const month = parts.find(part => part.type === 'month')?.value || '';
+    const day = parts.find(part => part.type === 'day')?.value || '';
+
+    return `${month}${toChineseDay(day)}`;
+}
+
 function formatDate(date) {
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
@@ -342,7 +260,10 @@ function formatDate(date) {
     const hours = String(date.getHours()).padStart(2, '0');
     const minutes = String(date.getMinutes()).padStart(2, '0');
     const seconds = String(date.getSeconds()).padStart(2, '0');
-    return `${year} 年 ${month} 月 ${day} 日 ${hours}:${minutes}:${seconds}`;
+    const taisuiYear = getTaisuiYearName(date);
+    const lunarMonthDay = getLunarMonthDay(date);
+
+    return `${taisuiYear}年${lunarMonthDay}／${year} 年 ${month} 月 ${day} 日 ${hours}:${minutes}:${seconds}`;
 }
 
 async function updateLastCommitTime() {
@@ -350,16 +271,19 @@ async function updateLastCommitTime() {
     try {
         const isoDate = await getLastCommitTime('scetayh', 'tarikkochan.github.io');
         if (!isoDate) {
-            paragraph.textContent = '本页面最后更新于未知时间';
+            paragraph.textContent = '本頁最終更新　時日未詳';
             return;
         }
         const dateObj = new Date(isoDate);
         const formatted = formatDate(dateObj);
-        paragraph.textContent = `本页面最后更新于 ${formatted}`;
+        paragraph.textContent = `本頁最終更新　${formatted}`;
     } catch (error) {
-        paragraph.textContent = '本页面最后更新于未知时间';
+        paragraph.textContent = '本頁最終更新　時日未詳';
     }
 }
 
-updateLastCommitTime();
+loadPersistedState();
+bindToolbarControls();
+updateToolbarState();
 renderDomainList();
+updateLastCommitTime();

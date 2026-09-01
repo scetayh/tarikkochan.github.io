@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>幻想界域巡錄　～ Compendium of Tarikko's Realms | tarikkochan.top</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/toolbar.css">
+    <link rel="stylesheet" href="assets/css/list.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
@@ -18,27 +21,33 @@
 
         <main class="main-layout">
             <div class="domain-toolbar">
-                <div class="toolbar-group">
-                    <span class="toolbar-label">排序</span>
-                    <button class="toolbar-button" type="button" data-sort-key="album">专辑</button>
-                    <button class="toolbar-button is-active" type="button" data-sort-key="original">原序</button>
-                    <button class="toolbar-button" type="button" data-sort-key="title">主标题</button>
-                    <button class="toolbar-button" type="button" data-sort-key="subtitle">副标题</button>
-                    <button class="toolbar-button" type="button" data-sort-key="domain">音源</button>
-                    <button class="toolbar-button" type="button" data-sort-key="enabled">无效置底</button>
+                <div class="toolbar-row">
+                    <span class="toolbar-label">排序 †</span>
+                    <div class="toolbar-group">
+                        <button class="toolbar-button" type="button" data-sort-key="album">篇録</button>
+                        <button class="toolbar-button is-active" type="button" data-sort-key="original">元順</button>
+                        <button class="toolbar-button" type="button" data-sort-key="title">題銘</button>
+                        <button class="toolbar-button" type="button" data-sort-key="subtitle">副銘</button>
+                        <button class="toolbar-button" type="button" data-sort-key="domain">響源</button>
+                        <button class="toolbar-button" type="button" data-sort-key="enabled">廃項居末</button>
+                    </div>
                 </div>
-                <br />
-                <div class="toolbar-group">
-                    <span class="toolbar-label">顺序</span>
-                    <button class="toolbar-button is-active" type="button" data-direction="asc">升序</button>
-                    <button class="toolbar-button" type="button" data-direction="desc">降序</button>
+
+                <div class="toolbar-row">
+                    <span class="toolbar-label">順番 †</span>
+                    <div class="toolbar-group">
+                        <button class="toolbar-button is-active" type="button" data-direction="asc">昇順</button>
+                        <button class="toolbar-button" type="button" data-direction="desc">降順</button>
+                    </div>
                 </div>
-                <br />
-                <div class="toolbar-group">
-                    <span class="toolbar-label">显示</span>
-                    <button class="toolbar-button is-active" type="button" data-filter="all">全部</button>
-                    <button class="toolbar-button" type="button" data-filter="enabled">有效</button>
-                    <button class="toolbar-button" type="button" data-filter="disabled">无效</button>
+
+                <div class="toolbar-row">
+                    <span class="toolbar-label">表示 †</span>
+                    <div class="toolbar-group">
+                        <button class="toolbar-button is-active" type="button" data-filter="all">全覧</button>
+                        <button class="toolbar-button" type="button" data-filter="enabled">現存</button>
+                        <button class="toolbar-button" type="button" data-filter="disabled">廃遺</button>
+                    </div>
                 </div>
             </div>
 
@@ -52,14 +61,15 @@
 
             <div class="footer">
                 <p><b>幻想界域巡錄 ～ 此間一切非真有之物</b></p>
-                <p><b>tarikkochan.top © 2025 - 2026 by Ryū Shiō<small> (地殻ムーブメント)</small></b></p>
+                <p><b>tarikkochan.top © 2025 - 2026 by Ryū Shi-Ō<small> (地殻ムーブメント)</small></b></p>
                 <br/>
-                <p id="last-commit">本页面最后更新于未知时间</p>
+                <p id="last-commit">本頁最終更新　時日未詳</p>
             </div>
         </main>
     </div>
 
-    <script src="assets/js/scripts.js" defer></script>
+    <script src="assets/js/state.js" defer></script>
+    <script src="assets/js/ui.js" defer></script>
 </body>
 
 </html>

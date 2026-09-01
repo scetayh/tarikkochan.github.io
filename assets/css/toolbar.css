@@ -1,0 +1,68 @@
+.domain-toolbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 20px;
+    background: rgba(43, 21, 73, 0.72);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    box-shadow: 0 0 15px rgba(107, 75, 147, 0.3);
+}
+
+.toolbar-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.toolbar-group {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border: 1px solid rgba(178, 143, 206, 0.28);
+    border-radius: 999px;
+    background: rgba(17, 10, 28, 0.22);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.toolbar-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    min-width: 52px;
+    white-space: nowrap;
+}
+
+.toolbar-button {
+    appearance: none;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-primary);
+    padding: 8px 12px;
+    font: inherit;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.toolbar-button:hover,
+.toolbar-button:focus-visible {
+    background: rgba(181, 146, 225, 0.12);
+    border-color: rgba(178, 143, 206, 0.4);
+    outline: none;
+}
+
+.toolbar-button.is-active {
+    background: linear-gradient(180deg, rgba(181, 146, 225, 0.32), rgba(140, 102, 196, 0.2));
+    border-color: rgba(178, 143, 206, 0.7);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), var(--glow);
+    color: #fff;
+}
